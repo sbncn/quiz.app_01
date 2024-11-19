@@ -22,5 +22,11 @@
         "surname": "c005",
         "password": "5a96acc64c72c5b2b890cf2855d036cacc054d61a360be4da12c1fa47dc0b480",
         "exam_count": 1
+    },
+    "s007_c007": {
+        "name": "s007",
+        "surname": "c007",
+        "password": "629f4cf9337b0d0c76f305d860f98894cfa8c279516b425747514ca8710deb97",
+        "exam_count": 1
     }
 }

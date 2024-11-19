@@ -526,5 +526,166 @@
             }
         ],
         "passed": false
+    },
+    {
+        "user_id": "s007_c007",
+        "date": "2024-11-19 21:41:32",
+        "total_score": 33.33333333333333,
+        "answers": [
+            {
+                "question": "JavaScript'te hangi operat\u00f6rler strict e\u015fitlik kontrol\u00fc yapar?",
+                "options": [
+                    "==",
+                    "===",
+                    "!==",
+                    "!="
+                ],
+                "correct_answer": [
+                    2,
+                    3
+                ],
+                "section": 3,
+                "user_answer": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "\u0130nsan v\u00fccudundaki en uzun kemik bacakta bulunur.",
+                "correct_answer": 1,
+                "section": 1,
+                "user_answer": 0
+            },
+            {
+                "question": "Bir web uygulamas\u0131nda performans optimizasyonu ad\u0131mlar\u0131n\u0131 s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Analiz",
+                    "Darbo\u011faz tespiti",
+                    "Optimizasyon",
+                    "Performans testi"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "question": "Bir byte ka\u00e7 bit'ten olu\u015fur?",
+                "options": [
+                    "4",
+                    "8",
+                    "16",
+                    "32"
+                ],
+                "correct_answer": 2,
+                "section": 2,
+                "user_answer": 4
+            },
+            {
+                "question": "D\u00fcnya'n\u0131n \u00e7ekirde\u011fi tamamen kat\u0131 haldedir.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "Dinozorlar yakla\u015f\u0131k 65 milyon y\u0131l \u00f6nce yok olmu\u015ftur.",
+                "correct_answer": 1,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "HTTP protokol\u00fcnde hangisi bir istek metodu de\u011fildir?",
+                "options": [
+                    "GET",
+                    "POST",
+                    "SEND",
+                    "PUT"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 4
+            },
+            {
+                "question": "Hangisi bir programlama paradigmas\u0131 de\u011fildir?",
+                "options": [
+                    "Fonksiyonel Programlama",
+                    "Nesne Y\u00f6nelimli Programlama",
+                    "Paralel Programlama",
+                    "Alfabetik Programlama"
+                ],
+                "correct_answer": 4,
+                "section": 2,
+                "user_answer": 4
+            },
+            {
+                "question": "Bir HTTP iste\u011finin ya\u015fam d\u00f6ng\u00fcs\u00fcn\u00fc s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "DNS sorgusu",
+                    "TCP ba\u011flant\u0131s\u0131",
+                    "HTTP iste\u011fi g\u00f6nderimi",
+                    "Yan\u0131t al\u0131m\u0131"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "question": "Bir API iste\u011finin i\u015flenme a\u015famalar\u0131n\u0131 s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "\u0130stek do\u011frulama",
+                    "Yetkilendirme",
+                    "\u0130\u015f mant\u0131\u011f\u0131 i\u015fleme",
+                    "Yan\u0131t olu\u015fturma"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    1
+                ]
+            },
+            {
+                "question": "Python'da hangi mod\u00fcller dosya i\u015flemleri i\u00e7in kullan\u0131l\u0131r?",
+                "options": [
+                    "os",
+                    "io",
+                    "math",
+                    "random"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    3,
+                    2
+                ]
+            }
+        ],
+        "passed": false
     }
 ]
