@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Aşağıdakilerden hangileri Python'da değiştirilemez (immutable) veri tipleridir?",
+        "options": [
+            "String",
+            "List",
+            "Tuple",
+            "Dictionary"
+        ],
+        "correct_answer": [1, 3]
+    },
+    {
+        "question": "HTTP protokolünde hangi durum kodları başarılı yanıtları temsil eder?",
+        "options": [
+            "200 OK",
+            "201 Created",
+            "404 Not Found",
+            "500 Internal Server Error"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "JavaScript'te hangi operatörler strict eşitlik kontrolü yapar?",
+        "options": [
+            "==",
+            "===",
+            "!==",
+            "!="
+        ],
+        "correct_answer": [2, 3]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri bir REST API'nin özelliklerindendir?",
+        "options": [
+            "Stateless",
+            "Client-Server",
+            "SQL Based",
+            "Socket Connection"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangi veri yapıları LIFO (Last In First Out) prensibine göre çalışır?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Array",
+            "Call Stack"
+        ],
+        "correct_answer": [1, 4]
+    },
+    {
+        "question": "Git versiyon kontrol sisteminde hangi komutlar uzak sunucuyla etkileşime girer?",
+        "options": [
+            "push",
+            "pull",
+            "commit",
+            "add"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangi HTTP metodları idempotent'tir?",
+        "options": [
+            "GET",
+            "PUT",
+            "POST",
+            "PATCH"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri NoSQL veritabanı türleridir?",
+        "options": [
+            "Document Store",
+            "Key-Value Store",
+            "Relational Store",
+            "Graph Store"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Python'da hangi veri yapıları sıralanabilir (ordered) özelliğe sahiptir?",
+        "options": [
+            "List",
+            "Tuple",
+            "Set",
+            "Dictionary"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangi JavaScript event'leri mouse ile ilgilidir?",
+        "options": [
+            "click",
+            "mouseover",
+            "keydown",
+            "submit"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri bir web uygulamasında performans optimizasyonu yöntemleridir?",
+        "options": [
+            "Caching",
+            "Code Minification",
+            "Code Documentation",
+            "Database Normalization"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "SQL'de hangi komutlar veri manipülasyonu (DML) için kullanılır?",
+        "options": [
+            "INSERT",
+            "UPDATE",
+            "CREATE",
+            "ALTER"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangi güvenlik önlemleri web uygulamalarında XSS saldırılarını önler?",
+        "options": [
+            "Input Validation",
+            "Output Encoding",
+            "Strong Passwords",
+            "Regular Backups"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri Docker container yaşam döngüsü komutlarıdır?",
+        "options": [
+            "start",
+            "stop",
+            "delete",
+            "modify"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangilerini kullanarak bir web sayfasında responsive tasarım yapılabilir?",
+        "options": [
+            "Media Queries",
+            "Flexbox",
+            "JavaScript",
+            "SQL"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Python'da hangi modüller dosya işlemleri için kullanılır?",
+        "options": [
+            "os",
+            "io",
+            "math",
+            "random"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri bir API güvenlik yöntemidir?",
+        "options": [
+            "JWT Token",
+            "OAuth",
+            "HTML",
+            "CSS"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "JavaScript'te hangi metodlar dizi (array) elemanlarını dönüştürmek için kullanılır?",
+        "options": [
+            "map",
+            "filter",
+            "push",
+            "pop"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Hangi HTTP başlıkları (headers) CORS ile ilgilidir?",
+        "options": [
+            "Access-Control-Allow-Origin",
+            "Access-Control-Allow-Methods",
+            "Content-Type",
+            "User-Agent"
+        ],
+        "correct_answer": [1, 2]
+    },
+    {
+        "question": "Aşağıdakilerden hangileri bir web uygulamasında state management çözümleridir?",
+        "options": [
+            "Redux",
+            "Context API",
+            "Express",
+            "Webpack"
+        ],
+        "correct_answer": [1, 2]
+    }
+]

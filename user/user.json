@@ -1,0 +1,26 @@
+{
+    "s001_c001": {
+        "name": "s001",
+        "surname": "c001",
+        "password": "7a3e6b16cb75f48fb897eff3ae732f3154f6d203b53f33660f01b4c3b6bc2df9",
+        "exam_count": 1
+    },
+    "s002_c002": {
+        "name": "s002",
+        "surname": "c002",
+        "password": "a1dd6837f284625bdb1cb68f1dbc85c5dc4d8b05bae24c94ed5f55c477326ea2",
+        "exam_count": 1
+    },
+    "_s008 c008": {
+        "name": "",
+        "surname": "s008 c008",
+        "password": "cc1af790b8e0c7460a7d41f6b57105ac04b4cac6a1edf9653bf85b006b77ee80",
+        "exam_count": 0
+    },
+    "s005_c005": {
+        "name": "s005",
+        "surname": "c005",
+        "password": "5a96acc64c72c5b2b890cf2855d036cacc054d61a360be4da12c1fa47dc0b480",
+        "exam_count": 1
+    }
+}

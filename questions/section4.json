@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Bir web sayfasının yüklenme aşamalarını doğru sırayla yazınız.",
+        "options": [
+            "HTML yüklenir",
+            "CSS yüklenir",
+            "JavaScript yüklenir",
+            "DOM oluşturulur"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Git ile çalışırken temel iş akışını sıralayınız.",
+        "options": [
+            "git add",
+            "git commit",
+            "git push",
+            "git pull"
+        ],
+        "correct_answer": [4, 1, 2, 3]
+    },
+    {
+        "question": "Bir HTTP isteğinin yaşam döngüsünü sıralayınız.",
+        "options": [
+            "DNS sorgusu",
+            "TCP bağlantısı",
+            "HTTP isteği gönderimi",
+            "Yanıt alımı"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Veritabanı normalizasyon formlarını sıralayınız.",
+        "options": [
+            "1NF",
+            "2NF",
+            "3NF",
+            "BCNF"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir web uygulamasında kullanıcı kaydı işlem adımlarını sıralayınız.",
+        "options": [
+            "Form validasyonu",
+            "Şifre hashleme",
+            "Veritabanına kayıt",
+            "Onay emaili gönderimi"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Yazılım geliştirme yaşam döngüsü (SDLC) aşamalarını sıralayınız.",
+        "options": [
+            "Planlama",
+            "Analiz",
+            "Tasarım",
+            "Geliştirme"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "TCP/IP protokol katmanlarını aşağıdan yukarıya doğru sıralayınız.",
+        "options": [
+            "Fiziksel Katman",
+            "Internet Katmanı",
+            "Transport Katmanı",
+            "Uygulama Katmanı"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir Docker container'ın yaşam döngüsü durumlarını sıralayınız.",
+        "options": [
+            "Created",
+            "Running",
+            "Paused",
+            "Stopped"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir API isteğinin işlenme aşamalarını sıralayınız.",
+        "options": [
+            "İstek doğrulama",
+            "Yetkilendirme",
+            "İş mantığı işleme",
+            "Yanıt oluşturma"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir web uygulamasında oturum açma sürecini sıralayınız.",
+        "options": [
+            "Kimlik bilgileri kontrolü",
+            "Token oluşturma",
+            "Session başlatma",
+            "Kullanıcı yönlendirme"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir CI/CD pipeline aşamalarını sıralayınız.",
+        "options": [
+            "Kod derleme",
+            "Test çalıştırma",
+            "Artifact oluşturma",
+            "Deployment"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Veritabanı transaction işlem adımlarını sıralayınız.",
+        "options": [
+            "Begin Transaction",
+            "İşlemleri Gerçekleştir",
+            "Commit",
+            "Rollback (hata durumunda)"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "React komponenti yaşam döngüsü metodlarını sıralayınız.",
+        "options": [
+            "constructor",
+            "componentDidMount",
+            "componentDidUpdate",
+            "componentWillUnmount"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir web uygulaması cache mekanizmasının çalışma sırasını yazınız.",
+        "options": [
+            "Cache kontrolü",
+            "Cache hit/miss kontrolü",
+            "Veri getirme/güncelleme",
+            "Cache güncelleme"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir dosyanın git reposuna eklenmesi sürecini sıralayınız.",
+        "options": [
+            "Working directory'e ekleme",
+            "Staging area'ya ekleme",
+            "Local repo'ya commit",
+            "Remote repo'ya push"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Event bubbling aşamalarını içten dışa doğru sıralayınız.",
+        "options": [
+            "Target element",
+            "Parent element",
+            "Grandparent element",
+            "Document root"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir web uygulamasında form gönderim sürecini sıralayınız.",
+        "options": [
+            "Client-side validasyon",
+            "API'ye gönderim",
+            "Server-side validasyon",
+            "Yanıt işleme"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir mikroservis mimarisinde istek işleme sırasını yazınız.",
+        "options": [
+            "API Gateway",
+            "Service Discovery",
+            "Load Balancer",
+            "Target Service"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir web uygulamasında performans optimizasyonu adımlarını sıralayınız.",
+        "options": [
+            "Analiz",
+            "Darboğaz tespiti",
+            "Optimizasyon",
+            "Performans testi"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    },
+    {
+        "question": "Bir REST API endpoint tasarım sürecini sıralayınız.",
+        "options": [
+            "Resource tanımlama",
+            "HTTP metod seçimi",
+            "URL yapısı tasarımı",
+            "Response format belirleme"
+        ],
+        "correct_answer": [1, 2, 3, 4]
+    }
+]

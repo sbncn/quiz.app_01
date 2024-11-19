@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Hangisi bir programlama paradigması değildir?",
+        "options": [
+            "Fonksiyonel Programlama",
+            "Nesne Yönelimli Programlama",
+            "Paralel Programlama",
+            "Alfabetik Programlama"
+        ],
+        "correct_answer": 4
+    },
+    {
+        "question": "İnsan vücudundaki en büyük organ hangisidir?",
+        "options": [
+            "Karaciğer",
+            "Deri",
+            "Kalp",
+            "Beyin"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bir SQL aggregate fonksiyonu değildir?",
+        "options": [
+            "COUNT",
+            "UPDATE",
+            "SUM",
+            "AVG"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Dünya'nın en derin okyanus çukuru hangisidir?",
+        "options": [
+            "Mariana Çukuru",
+            "Porto Riko Çukuru",
+            "Java Çukuru",
+            "Filipin Çukuru"
+        ],
+        "correct_answer": 1
+    },
+    {
+        "question": "HTTP protokolünde hangisi bir istek metodu değildir?",
+        "options": [
+            "GET",
+            "POST",
+            "SEND",
+            "PUT"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Bir byte kaç bit'ten oluşur?",
+        "options": [
+            "4",
+            "8",
+            "16",
+            "32"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Python'da bir listenin sonuna eleman eklemek için hangi metod kullanılır?",
+        "options": [
+            "add()",
+            "push()",
+            "append()",
+            "insert()"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "İnsan DNA'sı kaç kromozom çiftinden oluşur?",
+        "options": [
+            "21",
+            "22",
+            "23",
+            "24"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Hangisi bir NoSQL veritabanı değildir?",
+        "options": [
+            "MongoDB",
+            "PostgreSQL",
+            "Cassandra",
+            "Redis"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bir CSS seçici (selector) türü değildir?",
+        "options": [
+            "Class",
+            "ID",
+            "Tag",
+            "Function"
+        ],
+        "correct_answer": 4
+    },
+    {
+        "question": "JavaScript'te 'undefined' ve 'null' arasındaki fark nedir?",
+        "options": [
+            "Hiçbir fark yoktur",
+            "null bir object'tir, undefined bir tiptir",
+            "undefined tanımlanmamış, null boş değer atanmıştır",
+            "null sistem tarafından, undefined kullanıcı tarafından atanır"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Git versiyon kontrol sisteminde hangi komut yerel değişiklikleri uzak sunucuya gönderir?",
+        "options": [
+            "git commit",
+            "git push",
+            "git pull",
+            "git fetch"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Hangisi bir web güvenlik açığı değildir?",
+        "options": [
+            "SQL Injection",
+            "Cross-Site Scripting (XSS)",
+            "Cache Optimization",
+            "Cross-Site Request Forgery (CSRF)"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "REST API'lerde hangi HTTP durum kodu 'başarılı oluşturma' anlamına gelir?",
+        "options": [
+            "200",
+            "201",
+            "204",
+            "206"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Hangisi bir yazılım test türü değildir?",
+        "options": [
+            "Unit Test",
+            "Integration Test",
+            "Development Test",
+            "Regression Test"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Python'da bir string'i terse çevirmek için hangi syntax kullanılır?",
+        "options": [
+            "str.reverse()",
+            "reverse(str)",
+            "str[::-1]",
+            "str(-1)"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "TCP/IP protokol stack'inde kaç katman vardır?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "7"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "Bir web sayfasının stil özelliklerini değiştirmek için hangi JavaScript özelliği kullanılır?",
+        "options": [
+            "innerHTML",
+            "setAttribute",
+            "style",
+            "className"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Hangisi bir ACID özelliği değildir?",
+        "options": [
+            "Atomicity",
+            "Consistency",
+            "Inheritance",
+            "Durability"
+        ],
+        "correct_answer": 3
+    },
+    {
+        "question": "Bir web uygulamasında 'state' kavramı neyi ifade eder?",
+        "options": [
+            "Sunucu durumu",
+            "Veritabanı bağlantısı",
+            "Uygulama verilerinin anlık durumu",
+            "Ağ bağlantı durumu"
+        ],
+        "correct_answer": 3
+    }
+]

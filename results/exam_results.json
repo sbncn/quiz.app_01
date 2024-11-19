@@ -1,0 +1,530 @@
+[
+    {
+        "user_id": "s001_c001",
+        "date": "2024-11-17 15:31:29",
+        "total_score": 16.666666666666664,
+        "answers": [
+            {
+                "question": "REST API'lerde hangi HTTP durum kodu 'ba\u015far\u0131l\u0131 olu\u015fturma' anlam\u0131na gelir?",
+                "options": [
+                    "200",
+                    "201",
+                    "204",
+                    "206"
+                ],
+                "correct_answer": 2,
+                "section": 2,
+                "user_answer": 1
+            },
+            {
+                "question": "Vir\u00fcsler antibiyotiklerle tedavi edilebilir.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "A\u015fa\u011f\u0131dakilerden hangileri bir REST API'nin \u00f6zelliklerindendir?",
+                "options": [
+                    "Stateless",
+                    "Client-Server",
+                    "SQL Based",
+                    "Socket Connection"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    2,
+                    4
+                ]
+            },
+            {
+                "question": "Bir dosyan\u0131n git reposuna eklenmesi s\u00fcrecini s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Working directory'e ekleme",
+                    "Staging area'ya ekleme",
+                    "Local repo'ya commit",
+                    "Remote repo'ya push"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "question": "A\u015fa\u011f\u0131dakilerden hangileri bir REST API'nin \u00f6zelliklerindendir?",
+                "options": [
+                    "Stateless",
+                    "Client-Server",
+                    "SQL Based",
+                    "Socket Connection"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    2,
+                    4
+                ]
+            },
+            {
+                "question": "Bir dosyan\u0131n git reposuna eklenmesi s\u00fcrecini s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Working directory'e ekleme",
+                    "Staging area'ya ekleme",
+                    "Local repo'ya commit",
+                    "Remote repo'ya push"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "question": "Hangisi bir web g\u00fcvenlik a\u00e7\u0131\u011f\u0131 de\u011fildir?",
+                "options": [
+                    "SQL Injection",
+                    "Cross-Site Scripting (XSS)",
+                    "Cache Optimization",
+                    "Cross-Site Request Forgery (CSRF)"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 1
+            },
+            {
+                "question": "\u0130nsan v\u00fccudundaki kemik say\u0131s\u0131 do\u011fumdan yeti\u015fkinli\u011fe kadar ayn\u0131 kal\u0131r.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 0
+            },
+            {
+                "question": "Bir web uygulamas\u0131nda form g\u00f6nderim s\u00fcrecini s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Client-side validasyon",
+                    "API'ye g\u00f6nderim",
+                    "Server-side validasyon",
+                    "Yan\u0131t i\u015fleme"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    2,
+                    3,
+                    4,
+                    1
+                ]
+            },
+            {
+                "question": "Bir CI/CD pipeline a\u015famalar\u0131n\u0131 s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Kod derleme",
+                    "Test \u00e7al\u0131\u015ft\u0131rma",
+                    "Artifact olu\u015fturma",
+                    "Deployment"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    1,
+                    3,
+                    4,
+                    2
+                ]
+            },
+            {
+                "question": "TCP/IP protokol stack'inde ka\u00e7 katman vard\u0131r?",
+                "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "7"
+                ],
+                "correct_answer": 2,
+                "section": 2,
+                "user_answer": 3
+            },
+            {
+                "question": "JavaScript'te hangi metodlar dizi (array) elemanlar\u0131n\u0131 d\u00f6n\u00fc\u015ft\u00fcrmek i\u00e7in kullan\u0131l\u0131r?",
+                "options": [
+                    "map",
+                    "filter",
+                    "push",
+                    "pop"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "\u0130nsan DNA's\u0131 %98 oran\u0131nda \u015fempanzelerle benzerdir.",
+                "correct_answer": 1,
+                "section": 1,
+                "user_answer": 0
+            }
+        ],
+        "passed": false
+    },
+    {
+        "user_id": "s002_c002",
+        "date": "2024-11-17 22:05:20",
+        "total_score": 50.0,
+        "answers": [
+            {
+                "question": "Python'da hangi veri yap\u0131lar\u0131 s\u0131ralanabilir (ordered) \u00f6zelli\u011fe sahiptir?",
+                "options": [
+                    "List",
+                    "Tuple",
+                    "Set",
+                    "Dictionary"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "TCP/IP protokol stack'inde ka\u00e7 katman vard\u0131r?",
+                "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "7"
+                ],
+                "correct_answer": 2,
+                "section": 2,
+                "user_answer": 4
+            },
+            {
+                "question": "\u0130nsan v\u00fccudundaki kemik say\u0131s\u0131 do\u011fumdan yeti\u015fkinli\u011fe kadar ayn\u0131 kal\u0131r.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "Python'da hangi mod\u00fcller dosya i\u015flemleri i\u00e7in kullan\u0131l\u0131r?",
+                "options": [
+                    "os",
+                    "io",
+                    "math",
+                    "random"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "Bir mikroservis mimarisinde istek i\u015fleme s\u0131ras\u0131n\u0131 yaz\u0131n\u0131z.",
+                "options": [
+                    "API Gateway",
+                    "Service Discovery",
+                    "Load Balancer",
+                    "Target Service"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    4,
+                    3,
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "Hangisi bir web g\u00fcvenlik a\u00e7\u0131\u011f\u0131 de\u011fildir?",
+                "options": [
+                    "SQL Injection",
+                    "Cross-Site Scripting (XSS)",
+                    "Cache Optimization",
+                    "Cross-Site Request Forgery (CSRF)"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 4
+            },
+            {
+                "question": "Veritaban\u0131 normalizasyon formlar\u0131n\u0131 s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "1NF",
+                    "2NF",
+                    "3NF",
+                    "BCNF"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "question": "I\u015f\u0131k bir y\u0131lda yakla\u015f\u0131k 9.46 trilyon kilometre yol al\u0131r.",
+                "correct_answer": 1,
+                "section": 1,
+                "user_answer": 0
+            },
+            {
+                "question": "Bir web sayfas\u0131n\u0131n stil \u00f6zelliklerini de\u011fi\u015ftirmek i\u00e7in hangi JavaScript \u00f6zelli\u011fi kullan\u0131l\u0131r?",
+                "options": [
+                    "innerHTML",
+                    "setAttribute",
+                    "style",
+                    "className"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 3
+            },
+            {
+                "question": "D\u00fcnya'n\u0131n \u00e7ekirde\u011fi tamamen kat\u0131 haldedir.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 0
+            },
+            {
+                "question": "Bir web uygulamas\u0131 cache mekanizmas\u0131n\u0131n \u00e7al\u0131\u015fma s\u0131ras\u0131n\u0131 yaz\u0131n\u0131z.",
+                "options": [
+                    "Cache kontrol\u00fc",
+                    "Cache hit/miss kontrol\u00fc",
+                    "Veri getirme/g\u00fcncelleme",
+                    "Cache g\u00fcncelleme"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    4,
+                    3,
+                    2,
+                    1
+                ]
+            }
+        ],
+        "passed": false
+    },
+    {
+        "user_id": "s005_c005",
+        "date": "2024-11-19 16:39:41",
+        "total_score": 24.999999999999996,
+        "answers": [
+            {
+                "question": "Yaz\u0131l\u0131m geli\u015ftirme ya\u015fam d\u00f6ng\u00fcs\u00fc (SDLC) a\u015famalar\u0131n\u0131 s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Planlama",
+                    "Analiz",
+                    "Tasar\u0131m",
+                    "Geli\u015ftirme"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    4,
+                    3,
+                    2,
+                    1
+                ]
+            },
+            {
+                "question": "T\u00fcm bakteriler hastal\u0131\u011fa neden olur.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 0
+            },
+            {
+                "question": "Bir atom, molek\u00fclden daha b\u00fcy\u00fckt\u00fcr.",
+                "correct_answer": 0,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "I\u015f\u0131k bir y\u0131lda yakla\u015f\u0131k 9.46 trilyon kilometre yol al\u0131r.",
+                "correct_answer": 1,
+                "section": 1,
+                "user_answer": 1
+            },
+            {
+                "question": "D\u00fcnya'n\u0131n en derin okyanus \u00e7ukuru hangisidir?",
+                "options": [
+                    "Mariana \u00c7ukuru",
+                    "Porto Riko \u00c7ukuru",
+                    "Java \u00c7ukuru",
+                    "Filipin \u00c7ukuru"
+                ],
+                "correct_answer": 1,
+                "section": 2,
+                "user_answer": 1
+            },
+            {
+                "question": "Hangisi bir ACID \u00f6zelli\u011fi de\u011fildir?",
+                "options": [
+                    "Atomicity",
+                    "Consistency",
+                    "Inheritance",
+                    "Durability"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 1
+            },
+            {
+                "question": "Bir web uygulamas\u0131nda form g\u00f6nderim s\u00fcrecini s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Client-side validasyon",
+                    "API'ye g\u00f6nderim",
+                    "Server-side validasyon",
+                    "Yan\u0131t i\u015fleme"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    4,
+                    3,
+                    1,
+                    2
+                ]
+            },
+            {
+                "question": "Hangisi bir web g\u00fcvenlik a\u00e7\u0131\u011f\u0131 de\u011fildir?",
+                "options": [
+                    "SQL Injection",
+                    "Cross-Site Scripting (XSS)",
+                    "Cache Optimization",
+                    "Cross-Site Request Forgery (CSRF)"
+                ],
+                "correct_answer": 3,
+                "section": 2,
+                "user_answer": 1
+            },
+            {
+                "question": "Python'da hangi mod\u00fcller dosya i\u015flemleri i\u00e7in kullan\u0131l\u0131r?",
+                "options": [
+                    "os",
+                    "io",
+                    "math",
+                    "random"
+                ],
+                "correct_answer": [
+                    1,
+                    2
+                ],
+                "section": 3,
+                "user_answer": [
+                    4,
+                    5
+                ]
+            },
+            {
+                "question": "Event bubbling a\u015famalar\u0131n\u0131 i\u00e7ten d\u0131\u015fa do\u011fru s\u0131ralay\u0131n\u0131z.",
+                "options": [
+                    "Target element",
+                    "Parent element",
+                    "Grandparent element",
+                    "Document root"
+                ],
+                "correct_answer": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "section": 4,
+                "user_answer": [
+                    3,
+                    4,
+                    2,
+                    1
+                ]
+            },
+            {
+                "question": "A\u015fa\u011f\u0131dakilerden hangileri Python'da de\u011fi\u015ftirilemez (immutable) veri tipleridir?",
+                "options": [
+                    "String",
+                    "List",
+                    "Tuple",
+                    "Dictionary"
+                ],
+                "correct_answer": [
+                    1,
+                    3
+                ],
+                "section": 3,
+                "user_answer": [
+                    2,
+                    3
+                ]
+            }
+        ],
+        "passed": false
+    }
+]

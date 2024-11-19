@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Dünya'nın en büyük okyanusu Pasifik Okyanusu'dur.",
+        "correct_answer": 1
+    },
+    {
+        "question": "İnsan vücudundaki en büyük organ kalptir.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Ses ışıktan daha hızlı hareket eder.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Python programlama dili adını bir yılan türünden almıştır.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Dünya'nın uydusu Ay, Güneş'ten daha büyüktür.",
+        "correct_answer": 0
+    },
+    {
+        "question": "İnsan DNA'sı %98 oranında şempanzelerle benzerdir.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Venüs, Güneş Sistemi'ndeki en sıcak gezegendir.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Dinozorlar yaklaşık 65 milyon yıl önce yok olmuştur.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Bir atom, molekülden daha büyüktür.",
+        "correct_answer": 0
+    },
+    {
+        "question": "İnsan vücudundaki kemik sayısı doğumdan yetişkinliğe kadar aynı kalır.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Penguen kuşlar sınıfına aittir ve uçamaz.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Dünya'nın çekirdeği tamamen katı haldedir.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Işık bir yılda yaklaşık 9.46 trilyon kilometre yol alır.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Su her zaman 100 derece Celsius'ta kaynar.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Tüm bakteriler hastalığa neden olur.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Altın elementi periyodik tabloda Au sembolü ile gösterilir.",
+        "correct_answer": 1
+    },
+    {
+        "question": "İnsan vücudundaki en uzun kemik bacakta bulunur.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Virüsler antibiyotiklerle tedavi edilebilir.",
+        "correct_answer": 0
+    },
+    {
+        "question": "Einstein'ın E=mc² formülü kütle-enerji eşdeğerliğini ifade eder.",
+        "correct_answer": 1
+    },
+    {
+        "question": "Dünya'nın manyetik kutupları coğrafi kutuplarla tam olarak aynı noktadadır.",
+        "correct_answer": 0
+    }
+]
