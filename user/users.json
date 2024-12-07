@@ -1,0 +1,79 @@
+{
+    "S5029": {
+        "username": "tomi",
+        "surname": "geel",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "student_number": "S5029",
+        "teacher_id": null,
+        "role": "student",
+        "subject": null,
+        "school_name": "Waal",
+        "class_number": "9-A",
+        "admin": false,
+        "attempts": 0,
+        "score": 0,
+        "max_attempts": 2,
+        "success_per_section": {
+            "section1": 0,
+            "section2": 0,
+            "section3": 0,
+            "section4": 0
+        }
+    },
+    "tomi": {
+        "exam_results": [
+            {
+                "section1": {
+                    "score": 0.0,
+                    "true_count": 0.0,
+                    "false_count": 5.0,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "section2": {
+                    "score": 0.0,
+                    "true_count": 0.0,
+                    "false_count": 5.0,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "section3": {
+                    "score": 0.0,
+                    "true_count": 0.0,
+                    "false_count": 5.0,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "section4": {
+                    "score": 0.0,
+                    "true_count": 0.0,
+                    "false_count": 5.0,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "overall_score": 0.0
+            }
+        ],
+        "exam_attempts": 1
+    }
+}

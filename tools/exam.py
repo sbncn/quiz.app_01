@@ -1,6 +1,6 @@
-from timer import Timer
-from user import User
-from questions import Question
+from tools.timer import Timer
+from tools.user import User
+from tools.questions import Question
 
 
 

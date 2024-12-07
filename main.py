@@ -1,8 +1,8 @@
-from user import User, hash_password
-from timer import Timer
-from questions import Question
-from question_bank import QuestionBank
-from exam import Exam
+from tools.user import User, hash_password
+from tools.timer import Timer
+from tools.questions import Question
+from tools.question_bank import QuestionBank
+from tools.exam import Exam
 import json
 import random
 
