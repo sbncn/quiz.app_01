@@ -1,0 +1,330 @@
+{
+    "answers_section1": [
+      {
+        "id": 1,
+        "answer": "False"
+      },
+      {
+        "id": 2,
+        "answer": "False"
+      },
+      {
+        "id": 3,
+        "answer": "False"
+      },
+      {
+        "id": 4,
+        "answer": "False"
+      },
+      {
+        "id": 5,
+        "answer": "False"
+      },
+      {
+        "id": 6,
+        "answer": "is"
+      },
+      {
+        "id": 7,
+        "answer": "goes"
+      },
+      {
+        "id": 8,
+        "answer": "Past Continuous"
+      },
+      {
+        "id": 9,
+        "answer": "pronoun"
+      },
+      {
+        "id": 10,
+        "answer": "adverb"
+      },
+      {
+        "id": 11,
+        "answer": ["taller", "more beautiful"]
+      },
+      {
+        "id": 12,
+        "answer": ["go", "went", "drank"]
+      },
+      {
+        "id": 13,
+        "answer": ["I", "you", "he"]
+      },
+      {
+        "id": 14,
+        "answer": ["dogs", "cats"]
+      },
+      {
+        "id": 15,
+        "answer": ["quickly", "beautifully"]
+      },
+      {
+        "id": 16,
+        "answer": ["I", "speak", "fluent", "English"]
+      },
+      {
+        "id": 17,
+        "answer": ["Peter", "loves", "reading", "books"]
+      },
+      {
+        "id": 18,
+        "answer": ["Does", "he", "like", "football"]
+      },
+      {
+        "id": 19,
+        "answer": ["Is", "the", "sun", "shining"]
+      },
+      {
+        "id": 20,
+        "answer": ["He", "is", "reading", "a", "book"]
+      }
+    ],
+    "answers_section2": [
+     {
+      "id": 1,
+      "answer": "True"
+    },
+    {
+      "id": 2,
+      "answer": "False"
+    },
+    {
+      "id": 3,
+      "answer": "True"
+    },
+    {
+      "id": 4,
+      "answer": "False"
+    },
+    {
+      "id": 5,
+      "answer": "False"
+    },
+    {
+      "id": 6,
+      "answer": "Keyboard"
+    },
+    {
+      "id": 7,
+      "answer": ".docx"
+    },
+    {
+      "id": 8,
+      "answer": "Uniform Resource Locator"
+    },
+    {
+      "id": 9,
+      "answer": "LAN"
+    },
+    {
+      "id": 10,
+      "answer": "Python"
+    },
+    {
+      "id": 11,
+      "answer": ["Monitor", "Speakers", "Printer"]
+    },
+    {
+      "id": 12,
+      "answer": ["Windows", "macOS", "Linux"]
+    },
+    {
+      "id": 13,
+      "answer": ["Hard Drive", "USB Drive"]
+    },
+    {
+      "id": 14,
+      "answer": ["Google Chrome", "Mozilla Firefox", "Safari"]
+    },
+    {
+      "id": 15,
+      "answer": ["Mouse", "Keyboard", "Scanner"]
+    },
+    {
+      "id": 16,
+      "answer": ["Click on Start menu", "Select Shut Down", "Wait for the system to power off"]
+    },
+    {
+      "id": 17,
+      "answer": ["Right-click on desktop", "Select New", "Click on Folder"]
+    },
+    {
+      "id": 18,
+      "answer": ["Open a browser", "Type the URL", "Press Enter"]
+    },
+    {
+      "id": 19,
+      "answer": ["Click on File", "Select Save As", "Choose location and click Save"]
+    },
+    {
+      "id": 20,
+      "answer": ["Download the installer", "Run the installer", "Follow the on-screen instructions"]
+    }
+    ],
+    "answers_section3": [
+      {
+        "id": 1,
+        "answer": "True"
+      },
+      {
+        "id": 2,
+        "answer": "True"
+      },
+      {
+        "id": 3,
+        "answer": "True"
+      },
+      {
+        "id": 4,
+        "answer": "False"
+      },
+      {
+        "id": 5,
+        "answer": "True"
+      },
+      {
+        "id": 6,
+        "answer": "Qin Shi Huang"
+      },
+      {
+        "id": 7,
+        "answer": "Roman Empire"
+      },
+      {
+        "id": 8,
+        "answer": "Otto von Bismarck"
+      },
+      {
+        "id": 9,
+        "answer": "1492"
+      },
+      {
+        "id": 10,
+        "answer": "1776"
+      },
+      {
+        "id": 11,
+        "answer": ["French Revolution", "Industrial Revolution", "American Revolution"]
+      },
+      {
+        "id": 12,
+        "answer": ["Nationalism", "Imperialism", "Assassination of Archduke Ferdinand"]
+      },
+      {
+        "id": 13,
+        "answer": ["Roman Empire", "Byzantine Empire", "Mongol Empire"]
+      },
+      {
+        "id": 14,
+        "answer": ["Winston Churchill", "Franklin D. Roosevelt", "Adolf Hitler", "Joseph Stalin"]
+      },
+      {
+        "id": 15,
+        "answer": ["Urbanization", "Advances in technology", "End of feudalism"]
+      },
+      {
+        "id": 16,
+        "answer": ["The signing of the Magna Carta", "The Battle of Hastings", "The Fall of Constantinople"]
+      },
+      {
+        "id": 17,
+        "answer": ["The beginning of World War I", "The signing of the Treaty of Versailles", "The end of World War II"]
+      },
+      {
+        "id": 18,
+        "answer": ["The Fall of the Roman Empire", "The Rise of the Byzantine Empire", "The Crusades"]
+      },
+      {
+        "id": 19,
+        "answer": ["The Declaration of Independence", "The start of the American Civil War", "The Emancipation Proclamation"]
+      },
+      {
+        "id": 20,
+        "answer": ["Napoleon Bonaparte", "Adolf Hitler", "Winston Churchill"]
+      }
+    ],
+    "answers_section4": [
+      {
+        "id": 1,
+        "answer": "True"
+      },
+      {
+        "id": 2,
+        "answer": "False"
+      },
+      {
+        "id": 3,
+        "answer": "False"
+      },
+      {
+        "id": 4,
+        "answer": "False"
+      },
+      {
+        "id": 5,
+        "answer": "True"
+      },
+      {
+        "id": 6,
+        "answer": "Asia"
+      },
+      {
+        "id": 7,
+        "answer": "United States"
+      },
+      {
+        "id": 8,
+        "answer": "Pacific Ocean"
+      },
+      {
+        "id": 9,
+        "answer": "Himalayas"
+      },
+      {
+        "id": 10,
+        "answer": "Japan"
+      },
+      {
+        "id": 11,
+        "answer": ["Nile River", "Congo River", "Zambezi River"]
+      },
+      {
+        "id": 12,
+        "answer": ["Argentina", "Brazil", "Chile"]
+      },
+      {
+        "id": 13,
+        "answer": ["Antarctica", "Australia", "Europe"]
+      },
+      {
+        "id": 14,
+        "answer": ["Nile", "Amazon"]
+      },
+      {
+        "id": 15,
+        "answer": ["China", "India", "United States"]
+      },
+      {
+        "id": 16,
+        "answer": ["The fall of the Roman Empire", "The discovery of America by Christopher Columbus", "The Industrial Revolution"]
+      },
+      {
+        "id": 17,
+        "answer": ["Russia", "Canada", "United States"]
+      },
+      {
+        "id": 18,
+        "answer": ["Asia", "Africa", "Europe"]
+      },
+      {
+        "id": 19,
+        "answer": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"]
+      },
+      {
+        "id": 20,
+        "answer": ["Mount Everest", "Mount Kilimanjaro", "Mount Fuji"]
+      }
+    ]
+  }

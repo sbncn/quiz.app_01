@@ -1,202 +1,146 @@
 [
     {
-        "question": "Aşağıdakilerden hangileri Python'da değiştirilemez (immutable) veri tipleridir?",
-        "options": [
-            "String",
-            "List",
-            "Tuple",
-            "Dictionary"
-        ],
-        "correct_answer": [1, 3]
-    },
-    {
-        "question": "HTTP protokolünde hangi durum kodları başarılı yanıtları temsil eder?",
-        "options": [
-            "200 OK",
-            "201 Created",
-            "404 Not Found",
-            "500 Internal Server Error"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "JavaScript'te hangi operatörler strict eşitlik kontrolü yapar?",
-        "options": [
-            "==",
-            "===",
-            "!==",
-            "!="
-        ],
-        "correct_answer": [2, 3]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri bir REST API'nin özelliklerindendir?",
-        "options": [
-            "Stateless",
-            "Client-Server",
-            "SQL Based",
-            "Socket Connection"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangi veri yapıları LIFO (Last In First Out) prensibine göre çalışır?",
-        "options": [
-            "Stack",
-            "Queue",
-            "Array",
-            "Call Stack"
-        ],
-        "correct_answer": [1, 4]
-    },
-    {
-        "question": "Git versiyon kontrol sisteminde hangi komutlar uzak sunucuyla etkileşime girer?",
-        "options": [
-            "push",
-            "pull",
-            "commit",
-            "add"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangi HTTP metodları idempotent'tir?",
-        "options": [
-            "GET",
-            "PUT",
-            "POST",
-            "PATCH"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri NoSQL veritabanı türleridir?",
-        "options": [
-            "Document Store",
-            "Key-Value Store",
-            "Relational Store",
-            "Graph Store"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Python'da hangi veri yapıları sıralanabilir (ordered) özelliğe sahiptir?",
-        "options": [
-            "List",
-            "Tuple",
-            "Set",
-            "Dictionary"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangi JavaScript event'leri mouse ile ilgilidir?",
-        "options": [
-            "click",
-            "mouseover",
-            "keydown",
-            "submit"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri bir web uygulamasında performans optimizasyonu yöntemleridir?",
-        "options": [
-            "Caching",
-            "Code Minification",
-            "Code Documentation",
-            "Database Normalization"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "SQL'de hangi komutlar veri manipülasyonu (DML) için kullanılır?",
-        "options": [
-            "INSERT",
-            "UPDATE",
-            "CREATE",
-            "ALTER"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangi güvenlik önlemleri web uygulamalarında XSS saldırılarını önler?",
-        "options": [
-            "Input Validation",
-            "Output Encoding",
-            "Strong Passwords",
-            "Regular Backups"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri Docker container yaşam döngüsü komutlarıdır?",
-        "options": [
-            "start",
-            "stop",
-            "delete",
-            "modify"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangilerini kullanarak bir web sayfasında responsive tasarım yapılabilir?",
-        "options": [
-            "Media Queries",
-            "Flexbox",
-            "JavaScript",
-            "SQL"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Python'da hangi modüller dosya işlemleri için kullanılır?",
-        "options": [
-            "os",
-            "io",
-            "math",
-            "random"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri bir API güvenlik yöntemidir?",
-        "options": [
-            "JWT Token",
-            "OAuth",
-            "HTML",
-            "CSS"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "JavaScript'te hangi metodlar dizi (array) elemanlarını dönüştürmek için kullanılır?",
-        "options": [
-            "map",
-            "filter",
-            "push",
-            "pop"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Hangi HTTP başlıkları (headers) CORS ile ilgilidir?",
-        "options": [
-            "Access-Control-Allow-Origin",
-            "Access-Control-Allow-Methods",
-            "Content-Type",
-            "User-Agent"
-        ],
-        "correct_answer": [1, 2]
-    },
-    {
-        "question": "Aşağıdakilerden hangileri bir web uygulamasında state management çözümleridir?",
-        "options": [
-            "Redux",
-            "Context API",
-            "Express",
-            "Webpack"
-        ],
-        "correct_answer": [1, 2]
-    }
+        "id": 1,
+        "question_text": "The sentence 'The Roman Empire fell in 476 AD' is historically accurate.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 2,
+        "question_text": "World War I ended in 1918.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 3,
+        "question_text": "The American Revolution began in 1776.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 4,
+        "question_text": "The French Revolution started in 1800.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 5,
+        "question_text": "The Battle of Waterloo took place in 1815.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+  
+      {
+        "id": 6,
+        "question_text": "Who was the first emperor of China?",
+        "options": ["Jin Shi", "Qin Shi Huang", "Han Wudi", "Emperor Wu"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 7,
+        "question_text": "Which of the following empires was known for its system of roads and aqueducts?",
+        "options": ["Roman Empire", "Ottoman Empire", "Byzantine Empire", "Mughal Empire"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 8,
+        "question_text": "Which historical figure is known for the unification of Germany in 1871?",
+        "options": ["Napoleon Bonaparte", "Otto von Bismarck", "Adolf Hitler", "Winston Churchill"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 9,
+        "question_text": "In which year did Christopher Columbus first reach the Americas?",
+        "options": ["1492", "1453", "1588", "1610"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 10,
+        "question_text": "The Declaration of Independence was signed in which year?",
+        "options": ["1776", "1789", "1812", "1865"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+  
+      {
+        "id": 11,
+        "question_text": "Which of the following are correct examples of major historical revolutions?",
+        "options": ["French Revolution", "Industrial Revolution", "American Revolution", "Scientific Revolution"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 12,
+        "question_text": "Which of the following were the primary causes of World War I?",
+        "options": ["Nationalism", "Imperialism", "Assassination of Archduke Ferdinand", "Economic Depression"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 13,
+        "question_text": "Which of the following were major empires during the Medieval period?",
+        "options": ["Roman Empire", "Byzantine Empire", "Mongol Empire", "Ottoman Empire"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 14,
+        "question_text": "Which of the following were significant leaders during World War II?",
+        "options": ["Winston Churchill", "Franklin D. Roosevelt", "Adolf Hitler", "Joseph Stalin"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 15,
+        "question_text": "Which of the following were results of the Industrial Revolution?",
+        "options": ["Urbanization", "Advances in technology", "End of feudalism", "Increased agricultural productivity"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+  
+      {
+        "id": 16,
+        "question_text": "Arrange the following events in chronological order: 'The signing of the Magna Carta', 'The Battle of Hastings', 'The Fall of Constantinople'.",
+        "words": ["The signing of the Magna Carta", "The Battle of Hastings", "The Fall of Constantinople"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 17,
+        "question_text": "Arrange the following events in chronological order: 'The signing of the Treaty of Versailles', 'The beginning of World War I', 'The end of World War II'.",
+        "words": ["The beginning of World War I", "The signing of the Treaty of Versailles", "The end of World War II"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 18,
+        "question_text": "Arrange the following events in chronological order: 'The Fall of the Roman Empire', 'The Rise of the Byzantine Empire', 'The Crusades'.",
+        "words": ["The Fall of the Roman Empire", "The Rise of the Byzantine Empire", "The Crusades"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 19,
+        "question_text": "Arrange the following events in chronological order: 'The start of the American Civil War', 'The Declaration of Independence', 'The Emancipation Proclamation'.",
+        "words": ["The Declaration of Independence", "The start of the American Civil War", "The Emancipation Proclamation"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 20,
+        "question_text": "Arrange the following leaders in order of their leadership: 'Napoleon Bonaparte', 'Winston Churchill', 'Adolf Hitler'.",
+        "words": ["Napoleon Bonaparte", "Adolf Hitler", "Winston Churchill"],
+        "type": "Ordering",
+        "score": 20
+      }
+    
 ]

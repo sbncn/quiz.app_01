@@ -1,0 +1,52 @@
+# Byte-compiled / Cached / Logs
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables (if using dotenv)
+#.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings (optional, if you use VSCode)
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Pip wheel directory (for dependencies)
+pip-wheel-metadata/
+
+# Coverage reports
+htmlcov/
+*.cover
+*.coverage
+*.cov
+coverage.xml
+
+# Test outputs
+*.log
+*.pot
+tests/__pycache__/
+tests/*.pyc
+tests/*.pyo
+
+# Django migrations (if applicable)
+*.migration

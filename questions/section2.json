@@ -1,202 +1,148 @@
 [
     {
-        "question": "Hangisi bir programlama paradigması değildir?",
+        "id": 1,
+        "question_text": "A computer's CPU is also known as its brain.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 2,
+        "question_text": "RAM is a type of permanent storage in a computer.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 3,
+        "question_text": "An operating system is necessary for a computer to function.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 4,
+        "question_text": "A computer virus can physically damage hardware components.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 5,
+        "question_text": "HTML is a programming language.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 6,
+        "question_text": "Which of the following is an input device?",
+        "options": ["Printer", "Keyboard", "Monitor", "Speakers"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 7,
+        "question_text": "Which of the following file extensions is used for Microsoft Word documents?",
+        "options": [".docx", ".exe", ".jpg", ".mp4"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 8,
+        "question_text": "What does the acronym 'URL' stand for?",
         "options": [
-            "Fonksiyonel Programlama",
-            "Nesne Yönelimli Programlama",
-            "Paralel Programlama",
-            "Alfabetik Programlama"
+          "Universal Resource Locator",
+          "Uniform Resource Locator",
+          "Universal Reference Link",
+          "Uniform Reference Link"
         ],
-        "correct_answer": 4
-    },
-    {
-        "question": "İnsan vücudundaki en büyük organ hangisidir?",
-        "options": [
-            "Karaciğer",
-            "Deri",
-            "Kalp",
-            "Beyin"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Aşağıdakilerden hangisi bir SQL aggregate fonksiyonu değildir?",
-        "options": [
-            "COUNT",
-            "UPDATE",
-            "SUM",
-            "AVG"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Dünya'nın en derin okyanus çukuru hangisidir?",
-        "options": [
-            "Mariana Çukuru",
-            "Porto Riko Çukuru",
-            "Java Çukuru",
-            "Filipin Çukuru"
-        ],
-        "correct_answer": 1
-    },
-    {
-        "question": "HTTP protokolünde hangisi bir istek metodu değildir?",
-        "options": [
-            "GET",
-            "POST",
-            "SEND",
-            "PUT"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Bir byte kaç bit'ten oluşur?",
-        "options": [
-            "4",
-            "8",
-            "16",
-            "32"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Python'da bir listenin sonuna eleman eklemek için hangi metod kullanılır?",
-        "options": [
-            "add()",
-            "push()",
-            "append()",
-            "insert()"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "İnsan DNA'sı kaç kromozom çiftinden oluşur?",
-        "options": [
-            "21",
-            "22",
-            "23",
-            "24"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Hangisi bir NoSQL veritabanı değildir?",
-        "options": [
-            "MongoDB",
-            "PostgreSQL",
-            "Cassandra",
-            "Redis"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Aşağıdakilerden hangisi bir CSS seçici (selector) türü değildir?",
-        "options": [
-            "Class",
-            "ID",
-            "Tag",
-            "Function"
-        ],
-        "correct_answer": 4
-    },
-    {
-        "question": "JavaScript'te 'undefined' ve 'null' arasındaki fark nedir?",
-        "options": [
-            "Hiçbir fark yoktur",
-            "null bir object'tir, undefined bir tiptir",
-            "undefined tanımlanmamış, null boş değer atanmıştır",
-            "null sistem tarafından, undefined kullanıcı tarafından atanır"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Git versiyon kontrol sisteminde hangi komut yerel değişiklikleri uzak sunucuya gönderir?",
-        "options": [
-            "git commit",
-            "git push",
-            "git pull",
-            "git fetch"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Hangisi bir web güvenlik açığı değildir?",
-        "options": [
-            "SQL Injection",
-            "Cross-Site Scripting (XSS)",
-            "Cache Optimization",
-            "Cross-Site Request Forgery (CSRF)"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "REST API'lerde hangi HTTP durum kodu 'başarılı oluşturma' anlamına gelir?",
-        "options": [
-            "200",
-            "201",
-            "204",
-            "206"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Hangisi bir yazılım test türü değildir?",
-        "options": [
-            "Unit Test",
-            "Integration Test",
-            "Development Test",
-            "Regression Test"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Python'da bir string'i terse çevirmek için hangi syntax kullanılır?",
-        "options": [
-            "str.reverse()",
-            "reverse(str)",
-            "str[::-1]",
-            "str(-1)"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "TCP/IP protokol stack'inde kaç katman vardır?",
-        "options": [
-            "3",
-            "4",
-            "5",
-            "7"
-        ],
-        "correct_answer": 2
-    },
-    {
-        "question": "Bir web sayfasının stil özelliklerini değiştirmek için hangi JavaScript özelliği kullanılır?",
-        "options": [
-            "innerHTML",
-            "setAttribute",
-            "style",
-            "className"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Hangisi bir ACID özelliği değildir?",
-        "options": [
-            "Atomicity",
-            "Consistency",
-            "Inheritance",
-            "Durability"
-        ],
-        "correct_answer": 3
-    },
-    {
-        "question": "Bir web uygulamasında 'state' kavramı neyi ifade eder?",
-        "options": [
-            "Sunucu durumu",
-            "Veritabanı bağlantısı",
-            "Uygulama verilerinin anlık durumu",
-            "Ağ bağlantı durumu"
-        ],
-        "correct_answer": 3
-    }
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 9,
+        "question_text": "Which of the following is a type of computer network?",
+        "options": ["LAN", "CPU", "HTTP", "SQL"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 10,
+        "question_text": "Which of the following is a programming language?",
+        "options": ["Python", "Windows", "Google Chrome", "Linux"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 11,
+        "question_text": "Which of the following are examples of output devices?",
+        "options": ["Monitor", "Speakers", "Mouse", "Printer"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 12,
+        "question_text": "Which of the following are operating systems?",
+        "options": ["Windows", "macOS", "Linux", "Photoshop"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 13,
+        "question_text": "Which of the following are storage devices?",
+        "options": ["Hard Drive", "RAM", "USB Drive", "CPU"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 14,
+        "question_text": "Which of the following are web browsers?",
+        "options": ["Google Chrome", "Mozilla Firefox", "Safari", "Microsoft Word"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 15,
+        "question_text": "Which of the following are examples of computer peripherals?",
+        "options": ["Mouse", "Keyboard", "Scanner", "Operating System"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 16,
+        "question_text": "Arrange the following steps in order to shut down a Windows computer: 'Click on Start menu', 'Select Shut Down', 'Wait for the system to power off'.",
+        "words": ["Click on Start menu", "Select Shut Down", "Wait for the system to power off"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 17,
+        "question_text": "Arrange the following steps to create a new folder: 'Right-click on desktop', 'Select New', 'Click on Folder'.",
+        "words": ["Right-click on desktop", "Select New", "Click on Folder"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 18,
+        "question_text": "Arrange the following steps to open a web page: 'Open a browser', 'Type the URL', 'Press Enter'.",
+        "words": ["Open a browser", "Type the URL", "Press Enter"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 19,
+        "question_text": "Arrange the following steps to save a file: 'Click on File', 'Select Save As', 'Choose location and click Save'.",
+        "words": ["Click on File", "Select Save As", "Choose location and click Save"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 20,
+        "question_text": "Arrange the following steps to install software: 'Download the installer', 'Run the installer', 'Follow the on-screen instructions'.",
+        "words": ["Download the installer", "Run the installer", "Follow the on-screen instructions"],
+        "type": "Ordering",
+        "score": 20
+      }
+    
 ]

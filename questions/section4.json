@@ -1,202 +1,146 @@
 [
     {
-        "question": "Bir web sayfasının yüklenme aşamalarını doğru sırayla yazınız.",
-        "options": [
-            "HTML yüklenir",
-            "CSS yüklenir",
-            "JavaScript yüklenir",
-            "DOM oluşturulur"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Git ile çalışırken temel iş akışını sıralayınız.",
-        "options": [
-            "git add",
-            "git commit",
-            "git push",
-            "git pull"
-        ],
-        "correct_answer": [4, 1, 2, 3]
-    },
-    {
-        "question": "Bir HTTP isteğinin yaşam döngüsünü sıralayınız.",
-        "options": [
-            "DNS sorgusu",
-            "TCP bağlantısı",
-            "HTTP isteği gönderimi",
-            "Yanıt alımı"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Veritabanı normalizasyon formlarını sıralayınız.",
-        "options": [
-            "1NF",
-            "2NF",
-            "3NF",
-            "BCNF"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir web uygulamasında kullanıcı kaydı işlem adımlarını sıralayınız.",
-        "options": [
-            "Form validasyonu",
-            "Şifre hashleme",
-            "Veritabanına kayıt",
-            "Onay emaili gönderimi"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Yazılım geliştirme yaşam döngüsü (SDLC) aşamalarını sıralayınız.",
-        "options": [
-            "Planlama",
-            "Analiz",
-            "Tasarım",
-            "Geliştirme"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "TCP/IP protokol katmanlarını aşağıdan yukarıya doğru sıralayınız.",
-        "options": [
-            "Fiziksel Katman",
-            "Internet Katmanı",
-            "Transport Katmanı",
-            "Uygulama Katmanı"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir Docker container'ın yaşam döngüsü durumlarını sıralayınız.",
-        "options": [
-            "Created",
-            "Running",
-            "Paused",
-            "Stopped"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir API isteğinin işlenme aşamalarını sıralayınız.",
-        "options": [
-            "İstek doğrulama",
-            "Yetkilendirme",
-            "İş mantığı işleme",
-            "Yanıt oluşturma"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir web uygulamasında oturum açma sürecini sıralayınız.",
-        "options": [
-            "Kimlik bilgileri kontrolü",
-            "Token oluşturma",
-            "Session başlatma",
-            "Kullanıcı yönlendirme"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir CI/CD pipeline aşamalarını sıralayınız.",
-        "options": [
-            "Kod derleme",
-            "Test çalıştırma",
-            "Artifact oluşturma",
-            "Deployment"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Veritabanı transaction işlem adımlarını sıralayınız.",
-        "options": [
-            "Begin Transaction",
-            "İşlemleri Gerçekleştir",
-            "Commit",
-            "Rollback (hata durumunda)"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "React komponenti yaşam döngüsü metodlarını sıralayınız.",
-        "options": [
-            "constructor",
-            "componentDidMount",
-            "componentDidUpdate",
-            "componentWillUnmount"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir web uygulaması cache mekanizmasının çalışma sırasını yazınız.",
-        "options": [
-            "Cache kontrolü",
-            "Cache hit/miss kontrolü",
-            "Veri getirme/güncelleme",
-            "Cache güncelleme"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir dosyanın git reposuna eklenmesi sürecini sıralayınız.",
-        "options": [
-            "Working directory'e ekleme",
-            "Staging area'ya ekleme",
-            "Local repo'ya commit",
-            "Remote repo'ya push"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Event bubbling aşamalarını içten dışa doğru sıralayınız.",
-        "options": [
-            "Target element",
-            "Parent element",
-            "Grandparent element",
-            "Document root"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir web uygulamasında form gönderim sürecini sıralayınız.",
-        "options": [
-            "Client-side validasyon",
-            "API'ye gönderim",
-            "Server-side validasyon",
-            "Yanıt işleme"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir mikroservis mimarisinde istek işleme sırasını yazınız.",
-        "options": [
-            "API Gateway",
-            "Service Discovery",
-            "Load Balancer",
-            "Target Service"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir web uygulamasında performans optimizasyonu adımlarını sıralayınız.",
-        "options": [
-            "Analiz",
-            "Darboğaz tespiti",
-            "Optimizasyon",
-            "Performans testi"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    },
-    {
-        "question": "Bir REST API endpoint tasarım sürecini sıralayınız.",
-        "options": [
-            "Resource tanımlama",
-            "HTTP metod seçimi",
-            "URL yapısı tasarımı",
-            "Response format belirleme"
-        ],
-        "correct_answer": [1, 2, 3, 4]
-    }
+        "id": 1,
+        "question_text": "Mount Everest is the highest mountain in the world.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 2,
+        "question_text": "The Amazon River is the longest river in the world.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 3,
+        "question_text": "Africa is both a continent and a country.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 4,
+        "question_text": "The Great Wall of China is visible from space.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+      {
+        "id": 5,
+        "question_text": "The Sahara Desert is the largest desert in the world.",
+        "options": ["True", "False"],
+        "type": "True-False",
+        "score": 5
+      },
+  
+      {
+        "id": 6,
+        "question_text": "Which of the following is the largest continent by area?",
+        "options": ["Asia", "Africa", "Europe", "North America"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 7,
+        "question_text": "Which country is the largest producer of oil in the world?",
+        "options": ["United States", "Saudi Arabia", "Russia", "China"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 8,
+        "question_text": "Which ocean is the largest in the world?",
+        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 9,
+        "question_text": "Which mountain range is home to Mount Everest?",
+        "options": ["Andes", "Himalayas", "Rockies", "Alps"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+      {
+        "id": 10,
+        "question_text": "Which country is known as the 'Land of the Rising Sun'?",
+        "options": ["China", "Japan", "South Korea", "Thailand"],
+        "type": "Multiple-Choice",
+        "score": 10
+      },
+  
+      {
+        "id": 11,
+        "question_text": "Which of the following are major rivers in Africa?",
+        "options": ["Nile River", "Congo River", "Amazon River", "Zambezi River"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 12,
+        "question_text": "Which of the following are countries in South America?",
+        "options": ["Argentina", "Brazil", "Chile", "Canada"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 13,
+        "question_text": "Which of the following are considered continents?",
+        "options": ["Antarctica", "Australia", "Greenland", "Europe"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 14,
+        "question_text": "Which of the following are the longest rivers in the world?",
+        "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+      {
+        "id": 15,
+        "question_text": "Which of the following countries have the largest populations in the world?",
+        "options": ["China", "India", "United States", "Indonesia"],
+        "type": "Multiple-Answer",
+        "score": 15
+      },
+  
+      {
+        "id": 16,
+        "question_text": "Arrange the following events in chronological order: 'The discovery of America by Christopher Columbus', 'The Industrial Revolution', 'The fall of the Roman Empire'.",
+        "words": ["The fall of the Roman Empire", "The discovery of America by Christopher Columbus", "The Industrial Revolution"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 17,
+        "question_text": "Arrange the following countries in order of their land area from largest to smallest: 'Russia', 'United States', 'Canada'.",
+        "words": ["Russia", "Canada", "United States"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 18,
+        "question_text": "Arrange the following continents in order of size from largest to smallest: 'Asia', 'Africa', 'Europe'.",
+        "words": ["Asia", "Africa", "Europe"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 19,
+        "question_text": "Arrange the following oceans in order of their size from largest to smallest: 'Pacific Ocean', 'Atlantic Ocean', 'Indian Ocean'.",
+        "words": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
+        "type": "Ordering",
+        "score": 20
+      },
+      {
+        "id": 20,
+        "question_text": "Arrange the following mountains from the highest to the lowest: 'Mount Everest', 'Mount Kilimanjaro', 'Mount Fuji'.",
+        "words": ["Mount Everest", "Mount Kilimanjaro", "Mount Fuji"],
+        "type": "Ordering",
+        "score": 20
+      }
+    
 ]
