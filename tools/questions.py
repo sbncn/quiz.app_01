@@ -1,8 +1,15 @@
 import random
 import json
 import os
+#from tools.questions import Question
+
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Bulunduğu dosyanın dizini
+BASE_DIR = os.path.dirname(BASE_DIR)  # tools klasöründen çıkıp kök dizine git
+
 def get_data_path(file_name):
     """Helper function to construct full file paths."""
     return os.path.join(BASE_DIR, file_name)
@@ -11,18 +18,20 @@ def get_data_path(file_name):
 # Question sınıfı
 class Question:
     
-    def __init__(self, section, question_score=5):
+    def __init__(self, section, question_score=5 ):
         self.section = section
         self.question_score = question_score
         self.questions = self.load_questions()
         self.answers = self.load_answers()
         self.randomized_questions = self.randomize_questions()
         self.current_question_index = 0
+       
 
 
     def load_questions(self):
         """Load questions for the section from a JSON file."""
-        questions_file_path = get_data_path(f'questions/questions_section{self.section}.json')
+        questions_file_path = get_data_path(f'questions/section{self.section}.json')
+        #print(f"Attempting to load questions from: {questions_file_path}") #deneme
         if not os.path.exists(questions_file_path):
             print(f"Error: Questions file not found: {questions_file_path}")
             return []
@@ -38,6 +47,7 @@ class Question:
         except Exception as e:
             print(f"Error loading questions: {str(e)}")
             return [] 
+
 
     def validate_question_format(self, question):
         """Validate the structure of a question."""
@@ -234,7 +244,7 @@ class Question:
         except Exception as e:
             print(f"Error evaluating answer: {e}")
             return 0
-        
+    '''   
     def start_quiz(self):
         """Start the quiz and continue until all questions are answered."""
         total_possible_score = len(self.randomized_questions) * self.question_score
@@ -248,11 +258,11 @@ class Question:
     if __name__ == "__main__":
         sections = [1, 2, 3, 4]  # Tüm bölümleri burada belirtiyoruz
         for section in sections:
-            quiz = Question(section=section)
+            quiz = question(section=section)
             total_score, total_possible_score, percentage_score = quiz.start_quiz()
             print(f"Your total score for Section {section}: {total_score}/{total_possible_score} ({percentage_score:.2f}%)")
 
-         
+        ''' 
 
 
 

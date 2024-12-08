@@ -2,7 +2,7 @@ from tools.user import User, hash_password
 from tools.timer import Timer
 from tools.questions import Question
 from tools.question_bank import QuestionBank
-from tools.exam import Exam
+#from tools.exam import Exam
 import json
 import random
 
@@ -24,7 +24,7 @@ def generate_unique_id(users_data, role):
 
 def signup():
     try:
-        with open("user/users.json", "r") as f:
+        with open("user/user.json", "r") as f:
             users_data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         users_data = {}
