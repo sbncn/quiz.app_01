@@ -998,7 +998,6 @@
             }
         ],
         "exam_attempts": 2
-    
     },
     "T4453": {
         "username": "AIFORCE",
@@ -1007,8 +1006,6 @@
         "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "role": "teacher",
         "subject": "Mathematics"
-    
-    
     },
     "A0001": {
         "username": "Admin",
@@ -1037,31 +1034,29 @@
             "section2": 0,
             "section3": 0,
             "section4": 0
-        }
-    },
-    "H": {
+        },
         "exam_results": [
             {
                 "section1": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
+                    "score": 40.0,
+                    "true_count": 2.0,
+                    "false_count": 3.0,
                     "answers": [
-                        0,
-                        0,
+                        5,
+                        5,
                         0,
                         0,
                         0
                     ]
                 },
                 "section2": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
+                    "score": 20.0,
+                    "true_count": 1.0,
+                    "false_count": 4.0,
                     "answers": [
                         0,
                         0,
-                        0,
+                        5,
                         0,
                         0
                     ]
@@ -1079,18 +1074,18 @@
                     ]
                 },
                 "section4": {
-                    "score": 20.0,
-                    "true_count": 1.0,
-                    "false_count": 4.0,
+                    "score": 60.0,
+                    "true_count": 3.0,
+                    "false_count": 2.0,
                     "answers": [
-                        0,
-                        0,
-                        0,
                         5,
-                        0
+                        5,
+                        0,
+                        0,
+                        5
                     ]
                 },
-                "overall_score": 10.0
+                "overall_score": 35.0
             }
         ],
         "exam_attempts": 1

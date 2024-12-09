@@ -277,7 +277,7 @@ def take_exam(user):
 
     overall_score = total_score / len(exam_results)
     exam_results['overall_score'] = overall_score
-
+    '''
     # Update user data with exam results
     try:
         with open("user/users.json", "r") as f:
@@ -298,6 +298,42 @@ def take_exam(user):
     except (FileNotFoundError, json.JSONDecodeError):
         print("Error saving exam results.")
 
+        
+      '''
+    # 4. Sınav Sonuçlarını Kaydetme
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+    
+    # Kullanıcı ID'sini belirle
+        user_id = user.student_number if user.student_number else user.teacher_id
+
+    # Eğer kullanıcı ID kayıtlı değilse, yeni bir kayıt oluştur
+        if user_id not in users_data:
+            users_data[user_id] = {
+                "exam_results": [],
+                "exam_attempts": 0
+        }
+    
+    # Eğer 'exam_results' anahtarı yoksa ekle
+        if 'exam_results' not in users_data[user_id]:
+            users_data[user_id]['exam_results'] = []
+    
+    # Kullanıcının sınav sonuçlarını listeye ekle
+        users_data[user_id]['exam_results'].append(exam_results)
+    
+    # Kullanıcının sınav deneme sayısını güncelle
+        users_data[user_id]['exam_attempts'] = exam_attempts + 1
+    
+    # Güncellenmiş veriyi dosyaya yaz
+        with open("user/users.json", "w") as f:
+            json.dump(users_data, f, indent=4)
+        
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error saving exam results.")
+
+    
+    
     print(f"\n--- Exam Completed ---")
     print(f"Your overall score: {overall_score:.2f}%")
     print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
