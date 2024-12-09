@@ -263,16 +263,4 @@ class Question:
             print(f"Your total score for Section {section}: {total_score}/{total_possible_score} ({percentage_score:.2f}%)")
 
         ''' 
-
-
-
-    
-
-    
-
-        
-
-
-
-
-        
+   

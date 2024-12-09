@@ -131,7 +131,56 @@ class User:
         with open("user/users.json", "w") as f:
             json.dump(users_data, f, indent=4)
 
-    # new delete
+
+
+
+    def delete_user(self):
+        """ Delete a user from the system with error handling. """
+        try:
+            # Kullanıcı verilerini JSON dosyasından yükleme
+            with open("user/users.json", "r") as f:
+                users_data = json.load(f)
+        except FileNotFoundError:
+            print("Error: Users file not found.")
+            return
+        except json.JSONDecodeError:
+            print("Error: Users file is corrupted or has invalid JSON format.")
+            return
+    
+        if not users_data:
+            print("No users found.")
+            return
+
+        try:
+            print("Existing Users:")
+            print(f"{'ID':<15} {'Name':<20} {'Role':<15}")
+            print("-" * 50)
+            for user_id, user in users_data.items():
+                try:
+                # Kullanıcı bilgilerini yazdır
+                    print(f"{user_id:<15} {user['username']:<20} {user['role']:<15}")
+                except KeyError as e:
+                # Eksik anahtar varsa bilgilendir
+                    print(f"Error: Missing key {e} for user ID {user_id}. Skipping this user.")
+                    continue
+
+        # Silinecek kullanıcı ID'sini al
+            user_id_to_delete = input("Enter the ID of the user to delete: ").strip()
+            if user_id_to_delete in users_data:
+                del users_data[user_id_to_delete]
+                try:
+                # Güncellenmiş verileri dosyaya yaz
+                    with open("user/users.json", "w") as f:
+                        json.dump(users_data, f, indent=4)
+                    print(f"User with ID {user_id_to_delete} has been deleted.")
+                except IOError:
+                    print("Error: Failed to save updated user data.")
+            else:
+                print("Error: User ID not found.")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+
+    ''' # new delete
     def delete_user(self):
         try:
             with open("user/users.json", "r") as f:
@@ -156,7 +205,7 @@ class User:
             print(f"User with ID {user_id_to_delete} has been deleted.")
         else:
             print("User ID not found.")
-
+        '''
     def list_passwords(self):
         #"""Allow admin to view all user passwords."""
         if not self.admin:

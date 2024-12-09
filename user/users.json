@@ -998,23 +998,7 @@
             }
         ],
         "exam_attempts": 2
-    },
-    "S5712": {
-        "username": "Student",
-        "surname": "Student2",
-        "student_number": "S5712",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "student",
-        "school_name": "school",
-        "class_number": "10-A",
-        "attempts": 0,
-        "score": 0,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
+    
     },
     "T4453": {
         "username": "AIFORCE",
@@ -1023,57 +1007,8 @@
         "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "role": "teacher",
         "subject": "Mathematics"
-    },
-    "S9556": {
-        "username": "Jan",
-        "surname": "Dijk",
-        "student_number": "S9556",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "student",
-        "school_name": "Spelwert",
-        "class_number": "8-A",
-        "attempts": 0,
-        "score": 0,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "S2173": {
-        "username": "Jan",
-        "surname": "Kort",
-        "student_number": "S2173",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "student",
-        "school_name": "Alter",
-        "class_number": "8-A",
-        "attempts": 0,
-        "score": 0,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "S6561": {
-        "username": "Ogrenci1",
-        "surname": "Ogernci1",
-        "student_number": "S6561",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "student",
-        "school_name": "abs",
-        "class_number": "1-A",
-        "attempts": 0,
-        "score": 0,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
+    
+    
     },
     "A0001": {
         "username": "Admin",
@@ -1084,8 +1019,8 @@
         "subject": null
     },
     "S8276": {
-        "username": "Hakan",
-        "surname": "Ulugan",
+        "username": "H",
+        "surname": "Ulu",
         "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "student_number": "S8276",
         "teacher_id": null,
@@ -1093,360 +1028,6 @@
         "subject": null,
         "school_name": "Hogeschool",
         "class_number": "9-B",
-        "admin": false,
-        "attempts": 0,
-        "score": 0,
-        "max_attempts": 2,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "T3389": {
-        "username": "Wim",
-        "surname": "Van Dijk",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "student_number": null,
-        "teacher_id": "T3389",
-        "role": "teacher",
-        "subject": "Physics",
-        "school_name": null,
-        "class_number": null,
-        "admin": false,
-        "attempts": 0,
-        "score": 0,
-        "max_attempts": 2,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "S3792": {
-        "username": "Borris",
-        "surname": "Vos",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "student_number": "S3792",
-        "teacher_id": null,
-        "role": "student",
-        "subject": null,
-        "school_name": "7-A",
-        "class_number": "7-A",
-        "admin": false,
-        "attempts": 0,
-        "score": 0,
-        "max_attempts": 2,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "Borris": {
-        "exam_results": [
-            {
-                "section1": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section2": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 0.0
-            },
-            {
-                "section1": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section2": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 0.0
-            }
-        ],
-        "exam_attempts": 2
-    },
-    "S7472": {
-        "username": "tom",
-        "surname": "hom",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "student_number": "S7472",
-        "teacher_id": null,
-        "role": "student",
-        "subject": null,
-        "school_name": "ABC",
-        "class_number": "9-A",
-        "admin": false,
-        "attempts": 0,
-        "score": 0,
-        "max_attempts": 2,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        }
-    },
-    "tom": {
-        "exam_results": [
-            {
-                "section1": {
-                    "score": 60.0,
-                    "true_count": 3.0,
-                    "false_count": 2.0,
-                    "answers": [
-                        0,
-                        0,
-                        10,
-                        0,
-                        5
-                    ]
-                },
-                "section2": {
-                    "score": 80.0,
-                    "true_count": 4.0,
-                    "false_count": 1.0,
-                    "answers": [
-                        10,
-                        0,
-                        10,
-                        0,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 60.0,
-                    "true_count": 3.0,
-                    "false_count": 2.0,
-                    "answers": [
-                        5,
-                        10,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 20.0,
-                    "true_count": 1.0,
-                    "false_count": 4.0,
-                    "answers": [
-                        5,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 55.0
-            },
-            {
-                "section1": {
-                    "score": 40.0,
-                    "true_count": 2.0,
-                    "false_count": 3.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        10
-                    ]
-                },
-                "section2": {
-                    "score": 60.0,
-                    "true_count": 3.0,
-                    "false_count": 2.0,
-                    "answers": [
-                        0,
-                        0,
-                        10,
-                        5,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 20.0,
-                    "true_count": 1.0,
-                    "false_count": 4.0,
-                    "answers": [
-                        5,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 30.0
-            }
-        ],
-        "exam_attempts": 2
-    },
-    "Student": {
-        "exam_results": [
-            {
-                "section1": {
-                    "score": 60.0,
-                    "true_count": 3.0,
-                    "false_count": 2.0,
-                    "answers": [
-                        10,
-                        0,
-                        0,
-                        5,
-                        0
-                    ]
-                },
-                "section2": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 40.0,
-                    "true_count": 2.0,
-                    "false_count": 3.0,
-                    "answers": [
-                        0,
-                        0,
-                        10,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 25.0
-            }
-        ],
-        "exam_attempts": 1
-    },
-    "S1654": {
-        "username": "Nini",
-        "surname": "Polder",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "student_number": "S1654",
-        "teacher_id": null,
-        "role": "student",
-        "subject": null,
-        "school_name": "ROC",
-        "class_number": "9-A",
         "admin": false,
         "attempts": 0,
         "score": 0,
@@ -1458,7 +1039,7 @@
             "section4": 0
         }
     },
-    "Nini": {
+    "H": {
         "exam_results": [
             {
                 "section1": {
@@ -1486,83 +1067,32 @@
                     ]
                 },
                 "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
+                    "score": 20.0,
+                    "true_count": 1.0,
+                    "false_count": 4.0,
                     "answers": [
                         0,
-                        0,
+                        5,
                         0,
                         0,
                         0
                     ]
                 },
                 "section4": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
+                    "score": 20.0,
+                    "true_count": 1.0,
+                    "false_count": 4.0,
                     "answers": [
                         0,
                         0,
                         0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 0.0
-            },
-            {
-                "section1": {
-                    "score": 80.0,
-                    "true_count": 4.0,
-                    "false_count": 1.0,
-                    "answers": [
-                        0,
-                        10,
                         5,
-                        0,
-                        5
-                    ]
-                },
-                "section2": {
-                    "score": 100.0,
-                    "true_count": 5.0,
-                    "false_count": 0.0,
-                    "answers": [
-                        10,
-                        5,
-                        0,
-                        0,
-                        10
-                    ]
-                },
-                "section3": {
-                    "score": 0.0,
-                    "true_count": 0.0,
-                    "false_count": 5.0,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
                         0
                     ]
                 },
-                "section4": {
-                    "score": 40.0,
-                    "true_count": 2.0,
-                    "false_count": 3.0,
-                    "answers": [
-                        0,
-                        0,
-                        10,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 55.0
+                "overall_score": 10.0
             }
         ],
-        "exam_attempts": 2
+        "exam_attempts": 1
     }
 }

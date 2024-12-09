@@ -5,7 +5,7 @@ from tools.question_bank import QuestionBank
 #from tools.exam import Exam
 import json
 import random
-
+ 
 
 def generate_unique_id(users_data, role):
     """
@@ -430,7 +430,7 @@ def show_school_class_results(user):    # for teacher menu
         else:
             print("Invalid choice. Please try again.")
 
-
+                  
 def show_teacher_menu(user):
     """
     Display the main menu for teachers.
@@ -482,7 +482,7 @@ def show_student_menu(user):
 
             print("Invalid choice. Please try again.")
 
-def show_admin_menu(user):
+def show_admin_menu(user):  
     while True:
         print("\n--- Admin Menu ---")
         print(f"Welcome, {user.username}. You have full access to system management.")
@@ -490,7 +490,7 @@ def show_admin_menu(user):
         print("2. List Users")
         print("3. Update User")
         print("4. Delete User")
-        print("5.  View All Passwords")
+        print("5. View All Passwords")
         print("6. Exit")
         choice = input("Enter your choice: ").strip()
 

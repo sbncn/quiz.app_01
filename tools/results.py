@@ -1,7 +1,9 @@
 class Result:
-    def __init__(self):
+    def __init__(self,user_id):
         self.section_scores = {}
         self.overall_score = 0
+        
+
 
     def calculate_section_scores(self, section_id, correct_answers, total_questions):
         score = (correct_answers / total_questions) * 100 if total_questions else 0
@@ -13,3 +15,5 @@ class Result:
             total_score = sum(self.section_scores.values())
             self.overall_score = round(total_score / len(self.section_scores), 2)
         return self.overall_score
+    
+   

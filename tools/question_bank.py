@@ -66,8 +66,14 @@ class QuestionBank:
         """
         if section in self.files:
             try:
+                '''
+                with open("user/users.json", "w") as f:
+                    json.dump(users_data, f, indent=4)
+                print("Exam results successfully saved.")
+                '''
                 with open(self.files[section], 'w') as file:
                     json.dump(self.questions[section], file, indent=4)
+                    
             except Exception as e:
                 print(f"Error saving questions for {section}: {e}")
 
