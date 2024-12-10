@@ -2,7 +2,6 @@ from tools.user import User, hash_password
 from tools.timer import Timer
 from tools.questions import Question
 from tools.question_bank import QuestionBank
-#from tools.exam import Exam
 import json
 import random
  
@@ -277,29 +276,7 @@ def take_exam(user):
 
     overall_score = total_score / len(exam_results)
     exam_results['overall_score'] = overall_score
-    '''
-    # Update user data with exam results
-    try:
-        with open("user/users.json", "r") as f:
-            users_data = json.load(f)
-        
-        if user.username not in users_data:
-            users_data[user.username] = {}
-        
-        if 'exam_results' not in users_data[user.username]:
-            users_data[user.username]['exam_results'] = []
-        
-        users_data[user.username]['exam_results'].append(exam_results)
-        users_data[user.username]['exam_attempts'] = exam_attempts + 1
-        
-        with open("user/users.json", "w") as f:
-            json.dump(users_data, f, indent=4)
-            
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Error saving exam results.")
-
-        
-      '''
+   
     # 4. Sınav Sonuçlarını Kaydetme
     try:
         with open("user/users.json", "r") as f:
@@ -338,59 +315,6 @@ def take_exam(user):
     print(f"Your overall score: {overall_score:.2f}%")
     print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
     
-
-'''
-def show_student_exam_results(user):
-    
-    if user.role[0] != "t":
-        print("Access denied. Only teachers can view this information.")
-        return
-    
-    student_id = input("Enter the student ID: ").strip()
-    
-    # Kullanıcı dosyasından öğrenciyi bul
-    with open('user/users.json', 'r') as f:
-        users = json.load(f)
-    
-    student = next(
-            (
-                u for u in users.values()
-                if "student_number" in u and "role" in u and u["student_number"] == student_id and u["role"] == "student"
-            ),
-            None
-    )
-
-    if not student:
-        print("Student not found.")
-        return
-    
-    print(f"\nExam results for {student['username']} (ID: {student['student_number']}):")
-    for result in student.get("exam_results", []):
-        # Get the score for each section
-        section1_score = result.get('section1', {}).get('score', 0.0)
-        section2_score = result.get('section2', {}).get('score', 0.0)
-        section3_score = result.get('section3', {}).get('score', 0.0)
-        section4_score = result.get('section4', {}).get('score', 0.0)
-
-        # Get the true/false counts for each section
-        section1_true = result.get('section1', {}).get('true_count', 0.0)
-        section1_false = result.get('section1', {}).get('false_count', 0.0)
-        section2_true = result.get('section2', {}).get('true_count', 0.0)
-        section2_false = result.get('section2', {}).get('false_count', 0.0)
-        section3_true = result.get('section3', {}).get('true_count', 0.0)
-        section3_false = result.get('section3', {}).get('false_count', 0.0)
-        section4_true = result.get('section4', {}).get('true_count', 0.0)
-        section4_false = result.get('section4', {}).get('false_count', 0.0)
-
-        # Print the scores and true/false counts for each section
-        print(f"  - Section 1: Score: {section1_score}, T: {section1_true}, F: {section1_false}")
-        print(f"  - Section 2: Score: {section2_score}, T: {section2_true}, F: {section2_false}")
-        print(f"  - Section 3: Score: {section3_score}, T: {section3_true}, F: {section3_false}")
-        print(f"  - Section 4: Score: {section4_score}, T: {section4_true}, F: {section4_false}")
-
-        # print(f"- Section Scores: {section1_score}, {section2_score}, {section3_score}, {section4_score}")
-        print(f"- Overall Score: {result.get('overall_score', 0.0)}")
-       '''
 def show_student_exam_results(user):
     """
     Display the exam results for a specific student, accessible only by teachers.
@@ -433,8 +357,6 @@ def show_student_exam_results(user):
             print(f"- Overall Score: {overall_score}")
     except (FileNotFoundError, json.JSONDecodeError):
         print("Error: Unable to read user data.")
-
-
 
 
 def show_school_class_results(user):    # for teacher menu
