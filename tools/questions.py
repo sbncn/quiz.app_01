@@ -264,23 +264,5 @@ class Question:
         elif question["type"] == "Ordering":
             return "words" in question and isinstance(question["words"], list)
         return False
-    '''   
-    def start_quiz(self):
-        """Start the quiz and continue until all questions are answered."""
-        total_possible_score = len(self.randomized_questions) * self.question_score
-        total_score = 0
-        while self.current_question_index < len(self.randomized_questions):
-            total_score += self.ask_question()
-
-        percentage_score = (total_score / total_possible_score) * 100 if total_possible_score > 0 else 0
-        return total_score, total_possible_score, percentage_score
-    
-    if __name__ == "__main__":
-        sections = [1, 2, 3, 4]  # Tüm bölümleri burada belirtiyoruz
-        for section in sections:
-            quiz = question(section=section)
-            total_score, total_possible_score, percentage_score = quiz.start_quiz()
-            print(f"Your total score for Section {section}: {total_score}/{total_possible_score} ({percentage_score:.2f}%)")
-
-        ''' 
+   
    
