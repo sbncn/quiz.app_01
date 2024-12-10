@@ -339,10 +339,10 @@ def take_exam(user):
     print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
     
 
-
+'''
 def show_student_exam_results(user):
     
-    if user.role[0] != "T":
+    if user.role[0] != "t":
         print("Access denied. Only teachers can view this information.")
         return
     
@@ -390,6 +390,50 @@ def show_student_exam_results(user):
 
         # print(f"- Section Scores: {section1_score}, {section2_score}, {section3_score}, {section4_score}")
         print(f"- Overall Score: {result.get('overall_score', 0.0)}")
+       '''
+def show_student_exam_results(user):
+    """
+    Display the exam results for a specific student, accessible only by teachers.
+    """
+    if user.role[0] != "t":
+        print("Access denied. Only teachers can view this information.")
+        return
+
+    student_id = input("Enter the student ID: ").strip()
+
+    # Kullanıcı dosyasından öğrenciyi bul
+    try:
+        with open('user/users.json', 'r') as f:
+            users = json.load(f)
+        
+        # Öğrenci verilerini kullanıcı ID'sine göre al
+        student = users.get(student_id)
+
+        if not student or student.get("role") != "student":
+            print("Student not found.")
+            return
+        
+        print(f"\nExam results for {student['username']} (ID: {student['student_number']}):")
+        
+        # Öğrencinin sınav sonuçlarını döngü ile yazdır
+        for idx, result in enumerate(student.get("exam_results", []), start=1):
+            print(f"\n--- Exam Attempt {idx} ---")
+            for section in range(1, 5):
+                section_data = result.get(f"section{section}", {})
+                score = section_data.get('score', 0.0)
+                true_count = section_data.get('true_count', 0)
+                false_count = section_data.get('false_count', 0)
+
+                print(f"  - Section {section}:")
+                print(f"    - Score: {score}")
+                print(f"    - True Answers: {true_count}")
+                print(f"    - False Answers: {false_count}")
+            
+            overall_score = result.get('overall_score', 0.0)
+            print(f"- Overall Score: {overall_score}")
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error: Unable to read user data.")
+
 
 
 

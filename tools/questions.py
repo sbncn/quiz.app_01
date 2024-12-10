@@ -5,8 +5,6 @@ import os
 
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Bulunduğu dosyanın dizini
 BASE_DIR = os.path.dirname(BASE_DIR)  # tools klasöründen çıkıp kök dizine git
 
@@ -25,7 +23,9 @@ class Question:
         self.answers = self.load_answers()
         self.randomized_questions = self.randomize_questions()
         self.current_question_index = 0
-       
+        
+        # Validate if the questions are in correct format
+        #self.validate_question_format()
 
 
     def load_questions(self):
@@ -48,21 +48,6 @@ class Question:
             print(f"Error loading questions: {str(e)}")
             return [] 
 
-
-    def validate_question_format(self, question):
-        """Validate the structure of a question."""
-        required_keys = {"id", "question_text", "type", "score"}
-        if not required_keys.issubset(question.keys()):
-            return False
-
-        if question["type"] == "True-False":
-            return "options" in question and "True" in question["options"] and "False" in question["options"]
-        elif question["type"] in {"Multiple-Choice", "Multiple-Answer"}:
-            return "options" in question and isinstance(question["options"], list)
-        elif question["type"] == "Ordering":
-            return "words" in question and isinstance(question["words"], list)
-        return False
-
     def load_answers(self):
         """Load answers from the global answers JSON file."""
         answers_file_path = get_data_path('answers/answers.json')
@@ -83,7 +68,12 @@ class Question:
                 "section4": answers_data.get("answers_section4", [])
             }
             return self.answers
-
+        except FileNotFoundError:
+            print(f"Error: Answers file not found.")
+            return {}
+        except json.JSONDecodeError:
+            print("Error: Could not decode the answers file.")
+            return {}
         except Exception as e:
             print(f"Error loading answers: {str(e)}")
             return {}   
@@ -105,7 +95,8 @@ class Question:
             if answer_entry["id"] == question_id:
                 return answer_entry.get("answer")
         return None
-    
+
+
     def handle_question(self, question):
         """Handle user interaction for answering a question."""
         question_type = question.get("type", "Unknown")
@@ -133,7 +124,6 @@ class Question:
             print(f"Error handling question: {e}")
             return None
         
-
     def handle_true_false(self, question):
         """Handle True/False question."""
         print("Options: 1. True / 2. False")
@@ -142,9 +132,7 @@ class Question:
             if user_answer in ["1", "2"]:
                 return user_answer
             print("Invalid input. Please enter 1 for True or 2 for False.") 
-
-
-            
+        
     def handle_multiple_choice(self, question):
         """Handle Multiple-Choice question."""
         for idx, option in enumerate(question.get("options", []), start=1):
@@ -175,6 +163,7 @@ class Question:
                 return user_answer
             print("Invalid input. Please enter the order of numbers correctly (e.g., 1, 2, 3, 4).")                      
     
+
     def ask_question(self):
         """Display the current question and handle user input."""
         if self.current_question_index >= len(self.randomized_questions):
@@ -195,6 +184,7 @@ class Question:
         
         # Evaluate the answer
         return self.evaluate_answer(question, user_answer)
+    
     
     def evaluate_answer(self, question, user_answer):
         """Evaluate the user's answer against the correct answer."""
@@ -244,6 +234,36 @@ class Question:
         except Exception as e:
             print(f"Error evaluating answer: {e}")
             return 0
+   
+    def validate_question_structure(self, question):
+        """Validate the structure of a question."""
+        required_keys = {"id", "question_text", "type", "score"}
+        if not required_keys.issubset(question.keys()):
+            return False
+
+        if question["type"] == "True-False":
+            return "options" in question and "True" in question["options"] and "False" in question["options"]
+        elif question["type"] == "Multiple-Choice":
+            return "options" in question and isinstance(question["options"], list)
+        elif question["type"] == "Multiple-Answer":
+            return "options" in question and isinstance(question["options"], list) and len(question["options"]) > 1
+        elif question["type"] == "Ordering":
+            return "words" in question and isinstance(question["words"], list)
+        return False
+    
+    def validate_question_format(self, question):
+        """Validate the structure of a question."""
+        required_keys = {"id", "question_text", "type", "score"}
+        if not required_keys.issubset(question.keys()):
+            return False
+
+        if question["type"] == "True-False":
+            return "options" in question and "True" in question["options"] and "False" in question["options"]
+        elif question["type"] in {"Multiple-Choice", "Multiple-Answer"}:
+            return "options" in question and isinstance(question["options"], list)
+        elif question["type"] == "Ordering":
+            return "words" in question and isinstance(question["words"], list)
+        return False
     '''   
     def start_quiz(self):
         """Start the quiz and continue until all questions are answered."""

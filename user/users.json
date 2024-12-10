@@ -1086,6 +1086,57 @@
                     ]
                 },
                 "overall_score": 35.0
+            },
+            {
+                "section1": {
+                    "score": 60.0,
+                    "true_count": 3.0,
+                    "false_count": 2.0,
+                    "answers": [
+                        5,
+                        0,
+                        0,
+                        10,
+                        0
+                    ]
+                },
+                "section2": {
+                    "score": 0.0,
+                    "true_count": 0.0,
+                    "false_count": 5.0,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "section3": {
+                    "score": 40.0,
+                    "true_count": 2.0,
+                    "false_count": 3.0,
+                    "answers": [
+                        10,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "section4": {
+                    "score": 80.0,
+                    "true_count": 4.0,
+                    "false_count": 1.0,
+                    "answers": [
+                        0,
+                        0,
+                        10,
+                        0,
+                        10
+                    ]
+                },
+                "overall_score": 45.0
             }
         ],
         "exam_attempts": 1
