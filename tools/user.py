@@ -1,6 +1,6 @@
 import json
 import hashlib
-import os
+#import os
 
 def hash_password(password):
 
@@ -180,32 +180,7 @@ class User:
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
 
-    ''' # new delete
-    def delete_user(self):
-        try:
-            with open("user/users.json", "r") as f:
-                users_data = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
-            print("No users found.")
-            return
     
-        print("Existing Users:")
-        for user_id, user in users_data.items():
-            #print(f"ID: {user_id}, Name: {user['username']}, Role: {user['role']}")
-            #print(f"{'ID':<15} {'Name':<20} {'Role':<15}")
-            print("-" * 50)
-            print(f"{user_id:<15} {user['username']:<20} {user['role']:<15}")
-            
-
-        user_id_to_delete = input("Enter the ID of the user to delete: ").strip()
-        if user_id_to_delete in users_data:
-            del users_data[user_id_to_delete]
-            with open("user/users.json", "w") as f:
-                json.dump(users_data, f, indent=4)
-            print(f"User with ID {user_id_to_delete} has been deleted.")
-        else:
-            print("User ID not found.")
-        '''
     def list_passwords(self):
         #"""Allow admin to view all user passwords."""
         if not self.admin:
