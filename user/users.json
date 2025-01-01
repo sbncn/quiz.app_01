@@ -1,150 +1,4 @@
 {
-    "T4823": {
-        "username": "Fatih",
-        "surname": "Hc",
-        "teacher_id": "T4823",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "teacher",
-        "subject": "Mathematics"
-    },
-    "T2468": {
-        "username": "Yavuz",
-        "surname": "Hoca",
-        "teacher_id": "T2468",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "teacher",
-        "subject": "Physics"
-    },
-    "T7215": {
-        "username": "Alos",
-        "surname": "Oz",
-        "teacher_id": "T7215",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "teacher",
-        "subject": "Physics"
-    },
-    "S8131": {
-        "username": "student1",
-        "surname": "Student1",
-        "student_number": "S8131",
-        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-        "role": "student",
-        "school_name": "ASD",
-        "class_number": "8-A",
-        "attempts": 0,
-        "score": 0,
-        "success_per_section": {
-            "section1": 0,
-            "section2": 0,
-            "section3": 0,
-            "section4": 0
-        },
-        "exam_results": [
-            {
-                "section1": {
-                    "score": 60,
-                    "true_count": 3,
-                    "false_count": 2,
-                    "answers": [
-                        0,
-                        5,
-                        0,
-                        5,
-                        5
-                    ]
-                },
-                "section2": {
-                    "score": 20,
-                    "true_count": 1,
-                    "false_count": 4,
-                    "answers": [
-                        0,
-                        0,
-                        5,
-                        0,
-                        0
-                    ]
-                },
-                "section3": {
-                    "score": 40,
-                    "true_count": 2,
-                    "false_count": 3,
-                    "answers": [
-                        0,
-                        0,
-                        5,
-                        5,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 0,
-                    "true_count": 0,
-                    "false_count": 5,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 25
-            },
-            {
-                "section1": {
-                    "score": 40,
-                    "true_count": 2,
-                    "false_count": 3,
-                    "answers": [
-                        0,
-                        5,
-                        5,
-                        0,
-                        0
-                    ]
-                },
-                "section2": {
-                    "score": 20,
-                    "true_count": 1,
-                    "false_count": 4,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        5
-                    ]
-                },
-                "section3": {
-                    "score": 0,
-                    "true_count": 0,
-                    "false_count": 5,
-                    "answers": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "section4": {
-                    "score": 20,
-                    "true_count": 1,
-                    "false_count": 4,
-                    "answers": [
-                        5,
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "overall_score": 20
-            }
-        ],
-        "exam_attempts": 2
-    },
     "S5692": {
         "username": "student2",
         "surname": "Student2",
@@ -1140,5 +994,305 @@
             }
         ],
         "exam_attempts": 2
+    },
+    "S6086": {
+        "user_id": "S6086",
+        "username": "melo123",
+        "name": "melo",
+        "surname": "melo",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "role": "student",
+        "email": "melo@hotmail.com",
+        "phone_number": "0123456789",
+        "address": "Tiel",
+        "school_name": "ROC",
+        "class_number": "7-A",
+        "subject": null,
+        "admin": false,
+        "attempts": 0,
+        "score": 0,
+        "max_attempts": 2,
+        "success_per_section": {
+            "section1": 0,
+            "section2": 0,
+            "section3": 0,
+            "section4": 0
+        },
+        "exam_attempts": 1,
+        "exam_results": [
+            {
+                "English_score": 60.0,
+                "Computer_score": 20.0,
+                "History_score": 0.0,
+                "Geography_score": 40.0,
+                "overall_score": 30.0
+            }
+        ]
+    },
+    "S9345": {
+        "user_id": "S9345",
+        "username": "helo123",
+        "name": "helo",
+        "surname": "hel",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "role": "student",
+        "email": "helo@hotmail.com",
+        "phone_number": "0987654312",
+        "address": "Tiel",
+        "school_name": "ROC",
+        "class_number": "7-A",
+        "subject": null,
+        "admin": false,
+        "attempts": 0,
+        "score": 0,
+        "max_attempts": 2,
+        "success_per_section": {
+            "section1": 0,
+            "section2": 0,
+            "section3": 0,
+            "section4": 0
+        },
+        "exam_attempts": 2,
+        "exam_results": [
+            {
+                "English": {
+                    "score": 20.0,
+                    "true_count": 1,
+                    "false_count": 4,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                "Computer": {
+                    "score": 20.0,
+                    "true_count": 1,
+                    "false_count": 4,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                "History": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "Geography": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "overall_score": 10.0
+            },
+            {
+                "English": {
+                    "score": 40.0,
+                    "true_count": 2,
+                    "false_count": 3,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        5,
+                        5
+                    ]
+                },
+                "Computer": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "History": {
+                    "score": 40.0,
+                    "true_count": 2,
+                    "false_count": 3,
+                    "answers": [
+                        5,
+                        5,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "Geography": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "overall_score": 20.0
+            }
+        ]
+    },
+    "S6861": {
+        "user_id": "S6861",
+        "username": "zero123",
+        "name": "zero",
+        "surname": "null",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "role": "student",
+        "email": "zero@hotmail.com",
+        "phone_number": "0912345678",
+        "address": "Tiel",
+        "school_name": "ROC",
+        "class_number": "7-A",
+        "subject": null,
+        "admin": false,
+        "attempts": 0,
+        "score": 0,
+        "max_attempts": 2,
+        "success_per_section": {
+            "section1": 0,
+            "section2": 0,
+            "section3": 0,
+            "section4": 0
+        },
+        "exam_attempts": 2,
+        "exam_results": [
+            {
+                "English_score": 20.0,
+                "English": {
+                    "score": 20.0,
+                    "true_count": 1,
+                    "false_count": 4,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        5
+                    ]
+                },
+                "Computer_score": 0.0,
+                "Computer": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "History_score": 0.0,
+                "History": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "Geography_score": 0.0,
+                "Geography": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "overall_score": 5.0
+            },
+            {
+                "English_score": 0.0,
+                "English": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "Computer_score": 20.0,
+                "Computer": {
+                    "score": 20.0,
+                    "true_count": 1,
+                    "false_count": 4,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        5,
+                        0
+                    ]
+                },
+                "History_score": 0.0,
+                "History": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "Geography_score": 0.0,
+                "Geography": {
+                    "score": 0.0,
+                    "true_count": 0,
+                    "false_count": 5,
+                    "answers": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "overall_score": 5.0
+            }
+        ]
     }
 }

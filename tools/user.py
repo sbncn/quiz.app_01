@@ -6,11 +6,18 @@ def hash_password(password):
 
     """Hash the password using SHA-256."""
     return hashlib.sha256(password.strip().encode('utf-8')).hexdigest()
+def is_username_unique(users_data, username):
+    """
+    Check if the provided username is unique.
+    """
+    return all(user_data["username"] != username for user_data in users_data.values())
+
 
 class User:
-    def __init__(self, admin, username, surname, student_number=None, teacher_id=None, password=None, role=None, subject=None, school_name=None, class_number=None):
+    def __init__(self, admin,name, username, surname, student_number=None, teacher_id=None, password=None, role=None, subject=None, school_name=None, class_number=None):
         self.username = username
         self.surname = surname
+        self.name = name 
         self.password = hash_password(password) if password else None
         self.student_number = student_number
         self.teacher_id = teacher_id
@@ -370,25 +377,26 @@ class User:
         except json.JSONDecodeError:
             print("User data file is empty or corrupted.")
 
-    def list_users(self, role=None):
-        """List users based on optional role filter."""
-        try:
-            with open("user/users.json", "r") as f:
-                users_data = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
-            print("No users found.")
-            return []
+def list_users(role=None):
+    """
+    Kullanıcıları listele (isteğe bağlı olarak role bazında filtrele).
+    """
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("No users found.")
+        return
 
-        filtered_users = []
-        for unique_id, user_data in users_data.items():
-            if role is None or user_data.get('role') == role:
-                user_info = {
-                    'id': unique_id,
-                    'username': user_data.get('username', 'N/A'),
-                    'role': user_data.get('role', 'N/A')
-                }
-                filtered_users.append(user_info)
-        return filtered_users
+    print("\n--- User List ---")
+    print(f"{'User ID':<10} {'Name':<20} {'Role':<10}")
+    print("-" * 40)
+
+    for user_id, user_data in users_data.items():
+        if role is None or user_data["role"] == role:
+            name = f"{user_data['name']} {user_data['surname']}"
+            print(f"{user_id:<10} {name:<20} {user_data['role']:<10}")
+
 
     def update_user(self, user_id):
         """Update user details"""

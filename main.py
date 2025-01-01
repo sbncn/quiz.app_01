@@ -5,6 +5,9 @@ from tools.question_bank import QuestionBank
 from tools.exam import Exam
 import json
 import random
+from tools.user import hash_password
+from tools.user import is_username_unique
+
 
 
 def generate_unique_id(users_data, role):
@@ -30,60 +33,70 @@ def signup():
         users_data = {}
 
     print("\n--- Add New User ---")
-    username = input("Enter username: ").strip()
+    name = input("Enter first name: ").strip()
     surname = input("Enter surname: ").strip()
-    password = input("Enter password: ").strip()
-    role = input("Enter role (student/teacher): ").strip().lower()
+    username = input("Enter a unique username: ").strip()
 
+    # Kullanıcı adı benzersizlik kontrolü
+    while not is_username_unique(users_data, username):
+        print("This username is already taken. Please choose another one.")
+        username = input("Enter a unique username: ").strip()
+
+    role = input("Enter role (student/teacher): ").strip().lower()
     if role not in ["student", "teacher"]:
         print("Invalid role. Please choose 'student' or 'teacher'.")
         return
 
-    # Kullanıcıya özgü ID üretimi
-    unique_id = generate_unique_id(users_data, role)
+    password = input("Enter password: ").strip()
+    user_id = generate_unique_id(users_data, role)
 
-    # Kullanıcıdan role göre ek bilgiler al
+    # Ek alanlar
+    email = input("Enter email: ").strip()
+    phone_number = input("Enter phone number: ").strip()
+    address = input("Enter address: ").strip()
+
     if role == "student":
         school_name = input("Enter school name: ").strip()
         class_number = input("Enter class number: ").strip()
-        student_number = unique_id
         teacher_id = None
         subject = None
     elif role == "teacher":
         subject = input("Enter subject: ").strip()
         school_name = None
         class_number = None
-        student_number = None
-        teacher_id = unique_id
+        teacher_id = user_id
 
-    # Admin olup olmadığını belirle
     is_admin = input("Is this user an admin? (yes/no): ").strip().lower() == "yes"
 
-    # Yeni kullanıcı oluşturma
+    # Kullanıcı nesnesi oluşturma
     user = User(
         admin=is_admin,
         username=username,
+        name=name,
         surname=surname,
-        student_number=student_number,
-        teacher_id=teacher_id,
         password=password,
+        student_number=user_id if role == "student" else None,
+        teacher_id=teacher_id,
         role=role,
         subject=subject,
         school_name=school_name,
         class_number=class_number
     )
 
-    # JSON dosyasına eklemek için kullanıcı verisini hazırlama
-    users_data[unique_id] = {
+    # Kullanıcı verilerini JSON formatına dönüştürme
+    users_data[user_id] = {
+        "user_id": user_id,
         "username": user.username,
+        "name": user.name,
         "surname": user.surname,
         "password": user.password,
-        "student_number": user.student_number,
-        "teacher_id": user.teacher_id,
         "role": user.role,
-        "subject": user.subject,
+        "email": email,
+        "phone_number": phone_number,
+        "address": address,
         "school_name": user.school_name,
         "class_number": user.class_number,
+        "subject": user.subject,
         "admin": user.admin,
         "attempts": user.attempts,
         "score": user.score,
@@ -91,266 +104,317 @@ def signup():
         "success_per_section": user.success_per_section
     }
 
-    # Veriyi JSON dosyasına yaz
+    # Veriyi JSON dosyasına kaydetme
     try:
         with open("user/users.json", "w") as f:
             json.dump(users_data, f, indent=4)
-        print(f"User '{username} {surname}' with ID '{unique_id}' has been created.")
+        print(f"User '{name} {surname}' with username '{username}' and ID '{user_id}' has been created.")
     except Exception as e:
         print(f"Error saving user: {e}")
-    
 
 def login():
-    print("\n--- Login ---")
-    user_id = input("Enter your:\nStudent Number\nTeacher ID\nAdmin ID\n: ").strip()
-
+    """
+    Kullanıcı girişi için login işlevi.
+    """
     try:
         with open("user/users.json", "r") as f:
             users_data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
-        print("No users found. Please sign up first.1")
+        print("No users found. Please sign up first.")
         return None
-    
+
+    username = input("Enter your username: ").strip()
+
+    # Kullanıcıyı username ile bulma
     user_data = None
-    username = None
-    for uname, data in users_data.items():
-        if (
-            data.get("student_number") == user_id 
-            or data.get("teacher_id") == user_id 
-            or data.get ("admin_id")== user_id
-            ):
+    user_id = None
+    for uid, data in users_data.items():
+        if data["username"] == username:
             user_data = data
-            username = uname
+            user_id = uid
             break
-      
+
     if not user_data:
-        print("User not found. Please sign up first.2")
+        print("User not found. Please sign up first.")
         return None
 
-    
-    user = User(
-        username,
-        user_data['username'],
-        user_data['surname'],
-        user_data.get('student_number'),
-        user_data.get('password'),
-        user_data.get('teacher_id'),
-        user_data.get('role'),
-        user_data.get('subject'),
-        user_data.get('admin_id'),
-        user_data.get("score")
-    )
-    
-    print(f"Welcome {user_data['username']} ({user_data.get('role').capitalize()}).")
-    
-    if not user.has_attempts_left():
-        print("You have exceeded the maximum number of login attempts. Please try again later.")
-        return None
-    
-    user.increment_attempts()
-    password_try = 0
-    while password_try < 3:
+    for attempt in range(3):  # Kullanıcıya 3 deneme hakkı tanı
         password = input("Enter your password: ").strip()
-        if user_data.get("role") == "teacher":
-                show_teacher_menu(user)
-        elif user_data.get("role") == "student":
-                show_student_menu(user)
-        elif user_data.get("role") == "admin":  # Admin için yönlendirme
-                show_admin_menu(user)
-        return user
-    print("Too many failed login attempts.")
-    return None
-    
+        if user_data["password"] == hash_password(password):
+            print(f"Welcome, {user_data['name']} {user_data['surname']}!")
+            #return user_id
 
-def take_exam(user):
-    # Kullanıcı sınav denemelerini kontrol et
+            # Kullanıcı rolüne göre menü göster
+            if user_data["role"] == "student":
+                show_student_menu(user_id)
+            elif user_data["role"] == "teacher":
+                show_teacher_menu(user_id)
+            elif user_data["role"] == "admin":
+                show_admin_menu(user_id)
+            else:
+                print("Invalid role. Access denied.")
+            return user_id
+
+        print(f"Incorrect password. {2 - attempt} attempts left.")
+    print("Too many failed attempts. Try again later.")
+    return None
+
+
     try:
         with open("user/users.json", "r") as f:
             users_data = json.load(f)
-            exam_attempts = users_data.get(user.username, {}).get('exam_attempts', 0)
-        if exam_attempts >= 2:
-            print("You have no remaining exam attempts. Maximum attempts (2) reached.")
-            return
     except (FileNotFoundError, json.JSONDecodeError):
-        exam_attempts = 0
+        print("No users found. Please sign up first.")
+        return None
 
-    print(f"\nStarting exam (Attempt {exam_attempts + 1}/2)")
+    username = input("Enter your username: ").strip()
+
+    # Kullanıcıyı username ile bulma
+    user_data = None
+    user_id = None
+    for uid, data in users_data.items():
+        if data["username"] == username:
+            user_data = data
+            user_id = uid
+            break
+
+    if not user_data:
+        print("User not found. Please sign up first.")
+        return None
+
+    for attempt in range(3):  # Kullanıcıya 3 deneme hakkı tanı
+        password = input("Enter your password: ").strip()
+        if user_data["password"] == hash_password(password):
+            print(f"Welcome, {user_data['name']} {user_data['surname']}!")
+            return user_id  # Giriş yapıldıktan sonra `user_id` döndürülür
+
+        print(f"Incorrect password. {2 - attempt} attempts left.")
+    print("Too many failed attempts. Try again later.")
+    return None
+
+def show_user_profile(user_id):
+    """
+    Kullanıcı profilini user_id ile gösterir.
+    """
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+        user_data = users_data.get(user_id)
+
+        if not user_data:
+            print("User not found.")
+            return
+
+        print("\n--- User Profile ---")
+        print(f"Name: {user_data['name']} {user_data['surname']}")
+        print(f"Username: {user_data['username']}")
+        print(f"Role: {user_data['role'].capitalize()}")
+        print(f"Email: {user_data['email']}")
+        print(f"Phone: {user_data['phone_number']}")
+        print(f"Address: {user_data['address']}")
+        print(f"School: {user_data.get('school_name', 'N/A')}")
+        print(f"Class: {user_data.get('class_number', 'N/A')}")
+        print(f"Subject: {user_data.get('subject', 'N/A')}")
+        print(f"Admin: {'Yes' if user_data['admin'] else 'No'}")
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error loading user data.")
+
+
+
+    """
+    Sınavı başlatır ve kullanıcıyı yönlendirir.
+    """
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error loading user data.")
+        return
+
+    # Kullanıcı verisini kontrol et
+    if user_data.get("exam_attempts", 0) >= 2:
+        print("You have no remaining exam attempts. Maximum attempts (2) reached.")
+        return
+
+    print("\n--- Starting Exam ---")
     time_limit = 1800  # 30 dakika
     timer = Timer(time_limit)
     timer.start_timer()
-    
+
     total_score = 0
-    exam_finished = False
     exam_results = {}
 
-    # Bölüm isimleri, her bölüm için tanımlı
+    # Bölüm isimleri
     section_names = ["English", "Computer", "History", "Geography"]
 
-    # Her bölüm için soruları al ve sınavı başlat
     for section_idx, section_name in enumerate(section_names, start=1):
-        print(f"...........................................................................\n--- Starting {section_name} Section ---")
-        question = Question(section_idx)  # Her bölüm için Question sınıfını kullan
+        print(f"\n--- {section_name} Section ---")
+        question = Question(section_idx)
         correct_answers = 0
         total_questions = 5
-        answers_given = []  # Öğrencinin verdiği cevapları saklayacağız
-        
+
         for _ in range(total_questions):
             if not timer.check_time():
                 print("\nTime's up! Ending the exam.")
-                exam_finished = True
                 break
-            
-            # Kalan zamanı göster
-            remaining_time = timer.get_remaining_time()
-            minutes = remaining_time // 60
-            seconds = remaining_time % 60
-            print(f"Remaining time: {minutes} minutes {seconds} seconds")
-            
-            # Soruyu sor ve cevabını al
-            score = question.ask_question()  # Soruyu sormak ve cevabı almak
-            correct_answers += (score / question.question_score)
-            answers_given.append(score)  # Verilen cevabı sakla
-        
-        # Bölüm skoru hesapla
+
+            score = question.ask_question()
+            correct_answers += score / question.question_score
+
+        # Bölüm skoru
         section_score = (correct_answers / total_questions) * 100
-        exam_results[f"{section_name}_score"] = {
-            "score": section_score,
-            "true_count": correct_answers,
-            "false_count": total_questions - correct_answers,
-            "answers": answers_given  # Verilen cevapları sakla
-        }
-        
+        exam_results[f"{section_name}_score"] = section_score
         total_score += section_score
-        print(f"{section_name} Section completed. Total Questions: {total_questions} \nCorrect Answers: {correct_answers}, False Answers: {total_questions - correct_answers} \nScore: {section_score:.2f}/100")
-        
-        if exam_finished:
-            break
-    
+
     # Genel sınav skoru
-    overall_score = total_score / len(exam_results)
-    exam_results['overall_score'] = overall_score
+    overall_score = total_score / len(section_names)
+    exam_results["overall_score"] = overall_score
 
-    # Kullanıcı verilerini kaydetme (Sınav sonuçlarını ve denemeleri)
-    try:
-        with open("user/users.json", "r") as f:
-            users_data = json.load(f)
-        
-        user_id = user.student_number if user.student_number else user.teacher_id
-        
-        if user_id not in users_data:
-            users_data[user_id] = {
-                "exam_results": [],
-                "exam_attempts": 0
-            }
-        
-        if 'exam_results' not in users_data[user_id]:
-            users_data[user_id]['exam_results'] = []
-
-        users_data[user_id]['exam_results'].append(exam_results)
-        users_data[user_id]['exam_attempts'] = exam_attempts + 1
-        
-        with open("user/users.json", "w") as f:
-            json.dump(users_data, f, indent=4)
-    
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Error saving exam results.")
-
-    # Sınav tamamlandığında sonuçları göster
     print(f"\n--- Exam Completed ---")
-    print(f"Your overall score: {overall_score:.2f}%")
+    print(f"Your overall score: {overall_score:.2f}")
     print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
 
-def show_exam_results(user):
+    # Kullanıcı verilerini güncelle
+    user_data["exam_attempts"] = user_data.get("exam_attempts", 0) + 1
+    if "exam_results" not in user_data:
+        user_data["exam_results"] = []
+    user_data["exam_results"].append(exam_results)
+
+    # Kullanıcı ID'si ile veriyi güncelle
+    user_id = user_data.get("student_number") or user_data.get("teacher_id") or user_data.get("user_id")
+    if not user_id:
+        print("Error: Could not determine user ID.")
+        return
+
+    users_data[user_id] = user_data
+
+    with open("user/users.json", "w") as f:
+        json.dump(users_data, f, indent=4)
+
+def take_exam(user_data):
     """
-    Display exam results for the user based on their role.
-    If the user is a student, their own results are displayed.
-    If the user is a teacher, they can view results of any student.
+    Sınavı başlatır ve kullanıcıyı yönlendirir.
+    """
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error loading user data.")
+        return
+
+    # Kullanıcı verisini kontrol et
+    if user_data.get("exam_attempts", 0) >= 2:
+        print("You have no remaining exam attempts. Maximum attempts (2) reached.")
+        return
+
+    print("\n--- Starting Exam ---")
+    time_limit = 1800  # 30 dakika
+    timer = Timer(time_limit)
+    timer.start_timer()
+
+    total_score = 0
+    exam_results = {}
+
+    # Bölüm isimleri
+    section_names = ["English", "Computer", "History", "Geography"]
+
+    for section_idx, section_name in enumerate(section_names, start=1):
+        print(f"\n--- {section_name} Section ---")
+        question = Question(section_idx)
+
+        correct_answers = 0
+        false_answers = 0
+        total_questions = 5
+        answers_given = []  # Verilen cevapların skorları burada tutulur
+
+        for _ in range(total_questions):
+            if not timer.check_time():
+                print("\nTime's up! Ending the exam.")
+                break
+
+            # Soruyu sor ve cevabını al
+            score = question.ask_question()
+            if score > 0:
+                correct_answers += 1
+            else:
+                false_answers += 1
+            answers_given.append(score)  # Sorunun skoru (doğruysa puanı, yanlışsa 0)
+
+        # Bölüm skoru
+        section_score = (correct_answers / total_questions) * 100
+        exam_results[f"{section_name}_score"] = section_score
+        exam_results[section_name] = {
+            "score": section_score,
+            "true_count": correct_answers,
+            "false_count": false_answers,
+            "answers": answers_given
+        }
+        total_score += section_score
+
+    # Genel sınav skoru
+    overall_score = total_score / len(section_names)
+    exam_results["overall_score"] = overall_score
+
+    print(f"\n--- Exam Completed ---")
+    print(f"Your overall score: {overall_score:.2f}")
+    print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
+
+    # Kullanıcı verilerini güncelle
+    user_data["exam_attempts"] = user_data.get("exam_attempts", 0) + 1
+    if "exam_results" not in user_data:
+        user_data["exam_results"] = []
+    user_data["exam_results"].append(exam_results)
+
+    user_id = user_data.get("student_number") or user_data.get("teacher_id") or user_data.get("user_id")
+    if not user_id:
+        print("Error: Could not determine user ID.")
+        return
+
+    users_data[user_id] = user_data
+
+    with open("user/users.json", "w") as f:
+        json.dump(users_data, f, indent=4)
+        
+def show_exam_results(user_id):
+    """
+    Kullanıcı sınav sonuçlarını user_id ile görüntüler.
     """
     try:
         with open("user/users.json", "r") as f:
             users_data = json.load(f)
 
-        if user.role[0] == "s":  # Student role
-            user_data = users_data.get(user.student_number, None)
-            if not user_data:
-                print(f"No data found for student number: {user.student_number}. Please check the student number.")
-                return
+        user_data = users_data.get(user_id)
+        if not user_data:
+            print("User not found.")
+            return
 
+        print(f"\n=== Exam Results for {user_data['name']} {user_data['surname']} ===")
+        if user_data["role"] == "student":
             if 'exam_results' not in user_data or not user_data['exam_results']:
                 print("No exam results found for this user.")
                 return
 
-            print("\n=== Your Exam Results ===")
+            for attempt, result in enumerate(user_data["exam_results"], 1):
+                print(f"\nAttempt {attempt}:")
 
-            # Section names dynamically detected if available
-            section_names = [
-                key.replace("_score", "") for key in user_data['exam_results'][0].keys() if key.endswith("_score")
-            ]
-
-            for attempt_num, result in enumerate(user_data.get('exam_results', []), 1):
-                print(f"\nAttempt {attempt_num}:")
-
-                # Print results for each section
-                for section_name in section_names:
-                    section_data = result.get(f"{section_name}_score", 0)
-                    if isinstance(section_data, dict):
-                        print(f"{section_name}: {section_data.get('score', 0):.2f}")
+                # Bölüm skorlarını ve detaylarını yazdır
+                for section, section_result in result.items():
+                    if section == "overall_score":
+                        print(f"Overall Score: {section_result:.2f}")
+                        print("Status:", "PASSED" if section_result >= 75 else "FAILED")
+                    elif isinstance(section_result, dict):
+                        # Detaylı bilgi formatında yazdır
+                        print(f"{section}: {section_result['score']:.2f}/100")
+                        print(f"  - True Answers: {section_result['true_count']}")
+                        print(f"  - False Answers: {section_result['false_count']}")
+                        print(f"  - Answers Given: {section_result['answers']}")
                     else:
-                        print(f"{section_name}: {section_data:.2f}")
-
-                # Print overall score and status
-                overall_score = result.get('overall_score', 0)
-                print(f"Overall Score: {overall_score:.2f}%")
-                print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
-                print("-" * 40)
-
-        elif user.role[0] == "t":  # Teacher role
-            student_id = input("Enter the student ID: ").strip()
-
-            # Find student data
-            student_data = users_data.get(student_id, None)
-            if not student_data:
-                print(f"No data found for student ID: {student_id}. Please check the ID.")
-                return
-
-            if 'exam_results' not in student_data or not student_data['exam_results']:
-                print("No exam results found for this student.")
-                return
-
-            # Teacher's subject (branch)
-            teacher_subject = user.subject
-
-            print(f"\n=== Exam Results for Student ID: {student_id} ===")
-            print(f"Teacher Subject: {teacher_subject}")
-            
-            # Section names dynamically detected if available
-            section_names = [
-                key.replace("_score", "") for key in student_data['exam_results'][0].keys() if key.endswith("_score")
-            ]
-
-            for attempt_num, result in enumerate(student_data.get('exam_results', []), 1):
-                print(f"\nAttempt {attempt_num}:")
-
-                # Print results for each section
-                for section_name in section_names:
-                    if section_name.lower() == teacher_subject.lower():  # Only display results for the teacher's subject  
-                        section_data = result.get(f"{section_name}_score", 0)
-                        if isinstance(section_data, dict):
-                            print(f"{section_name}: {section_data.get('score', 0):.2f}")
-                        else:
-                            print(f"{section_name}: {section_data:.2f}")
-
-                # Print overall score and status
-                overall_score = result.get('overall_score', 0)
-                print(f"Overall Score: {overall_score:.2f}%")
-                print("Status:", "PASSED" if overall_score >= 75 else "FAILED")
-                print("-" * 40)
-
+                        # Bölüm skoru formatında yazdır
+                        print(f"{section}: {section_result:.2f}/100")
         else:
-            print("Access denied. Invalid user role.")
-
+            print("Access denied for this role.")
     except (FileNotFoundError, json.JSONDecodeError):
-        print("Error reading user data. Please ensure the users.json file exists and is correctly formatted.")
+        print("Error reading user data.")
 
 
 def show_school_class_results(user):
@@ -548,31 +612,74 @@ def show_teacher_menu(user):
             break
         else:
             print("Invalid choice. Please try again.")
-
-def show_student_menu(user):
+def show_student_menu(user_id):
     """
-    Display the main menu after login
+    Öğrenci menüsünü gösterir.
     """
-    
-    while True:
-        print("\n=== Main Menu ===")
-        print("1. View Exam Results")
-        print("2. Take New Exam")
-        print("3. Logout")
-        
-        choice = input("Choose an option (1-3): ").strip()
-        
-        if choice == "1":
-            show_exam_results(user)
-        elif choice == "2":
-            take_exam(user)
-        elif choice == "3":
-            print("Logging out...")
-            break
-        else:
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
 
-            print("Invalid choice. Please try again.")
+        # Kullanıcı verisini user_id üzerinden alın
+        user_data = users_data.get(user_id)
+        if not user_data or user_data["role"] != "student":
+            print("Access denied.")
+            return
 
+        print(f"\nWelcome {user_data['name']} {user_data['surname']}!")
+        while True:
+            print("\n=== Student Menu ===")
+            print("1. View Exam Results")
+            print("2. Take New Exam")
+            print("3. Logout")
+
+            choice = input("Choose an option (1-3): ").strip()
+
+            if choice == "1":
+                show_exam_results(user_id)
+            elif choice == "2":
+                take_exam(user_data)  # user_data geçiriliyor
+            elif choice == "3":
+                print("Logging out...")
+                break
+            else:
+                print("Invalid choice. Please try again.")
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error loading user data.")
+'''
+def show_student_menu(user_id):
+    """
+    Öğrenci için ana menüyü göster.
+    """
+    try:
+        with open("user/users.json", "r") as f:
+            users_data = json.load(f)
+        user_data = users_data.get(user_id)
+
+        if not user_data:
+            print("User not found.")
+            return
+
+        while True:
+            print(f"\n=== Student Menu for {user_data['name']} {user_data['surname']} ===")
+            print("1. View Exam Results")
+            print("2. Take New Exam")
+            print("3. Logout")
+
+            choice = input("Choose an option (1-3): ").strip()
+
+            if choice == "1":
+                show_exam_results(user_id)
+            elif choice == "2":
+                take_exam(user_id)
+            elif choice == "3":
+                print("Logging out...")
+                break
+            else:
+                print("Invalid choice. Please try again.")
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Error loading user data.")
+'''
 def show_admin_menu(user):  
     while True:
         print("\n--- Admin Menu ---")
