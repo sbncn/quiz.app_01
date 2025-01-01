@@ -573,32 +573,57 @@ def show_student_menu(user):
 
             print("Invalid choice. Please try again.")
 
-def show_admin_menu(user):
+def show_admin_menu(user):  
     while True:
         print("\n--- Admin Menu ---")
         print(f"Welcome, {user.username}. You have full access to system management.")
-        print("1. Add Users")
-        print("2. View Student Passwords")
-        print("3. View Teacher Passwords")
-        print("4. Edit Users")
-        print("5. Delete Users")
+        print("1. Add User")
+        print("2. List Users")
+        print("3. Update User")
+        print("4. Delete User")
+        print("5. View All Passwords")
         print("6. Exit")
         choice = input("Enter your choice: ").strip()
+
         if choice == "1":
-            print("Add users... (this is a placeholder)")
-            # add users
+            # Mevcut signup fonksiyonunu kullan
+            signup()
         elif choice == "2":
-            print("View Student Passwords... (this is a placeholder)")
-            # Student passwords
+            print("\n--- User List ---")
+            print("1. All Users")
+            print("2. Students")
+            print("3. Teachers")
+            role_choice = input("Select a user type: ").strip()
+            
+            role_map = {
+                "1": None,
+                "2": "student", 
+                "3": "teacher"
+            }
+            
+            selected_role = role_map.get(role_choice)
+            users = user.list_users(selected_role)
+            if not users:
+                print("No users found.")
+            else:
+                print("\n--- User Details ---")
+            for u in users:
+                print(f"ID: {u['id']:<8}, Name: {u['username']:<10},Role: {u['role']:<8}")
+                #print(f"{u['id']:<10} {u['username']:<20} {u['role']:<15}")
+    
+            input("\nPress Enter to return to the menu.")  # Menüye dönmeden önce bekleme
+
         elif choice == "3":
-            print("View Teacher Passwords...(this is a placeholder)")
+            user_id = input("Enter user ID to update: ").strip()
+            user.update_user(user_id)
+        
         elif choice == "4":
-             print("4. Edit Users...(this is a placeholder)")
-        elif choice == "5":
-            delete_user(user)
-            print("5. Delete Users...(this is a placeholder)")
-        elif choice =="6":
-            break  # Döngüyü kırarak admin menüsünden çık
+            user.delete_user()
+        elif choice == "5" :
+            user.list_passwords()   
+        
+        elif choice == "6":
+            break
         else:
             print("Invalid choice. Please try again.")
 
