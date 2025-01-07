@@ -1,0 +1,37 @@
+services:
+  exam-python:
+    container_name: exam_python_container
+    build: .
+    image: exam-python
+    command: python -i main.py
+    volumes:
+      - .:/app
+    working_dir: /app
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    env_file:
+      - .env
+    networks:
+      - aiforce_project
+
+  exam-postgres:
+    container_name: exam_postgres_container
+    image: postgres:15
+    environment:
+      POSTGRES_DB: exam_app_db
+      POSTGRES_USER: ai-force
+      POSTGRES_PASSWORD: Force1234
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - aiforce_project
+
+networks:
+  aiforce_project:
+    driver: bridge
+
+volumes:
+  postgres_data:

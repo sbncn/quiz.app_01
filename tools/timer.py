@@ -1,4 +1,5 @@
 import time
+import time
 
 class Timer:
     def __init__(self, time_limit):

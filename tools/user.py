@@ -14,22 +14,52 @@ def is_username_unique(users_data, username):
 
 
 class User:
-    def __init__(self, admin,name, username, surname, student_number=None, teacher_id=None, password=None, role=None, subject=None, school_name=None, class_number=None):
+    def __init__(
+        self, admin, username, name, surname,
+        student_number=None, teacher_id=None, password=None,
+        role=None, subject=None, school_name=None, class_number=None
+    ):
         self.username = username
+        self.name = name
         self.surname = surname
-        self.name = name 
-        self.password = hash_password(password) if password else None
+        self.password = password
         self.student_number = student_number
         self.teacher_id = teacher_id
         self.role = role
         self.subject = subject
-        self.school_name = school_name  
-        self.class_number = class_number  
-        self.attempts = 0
-        self.score = 0
-        self.max_attempts = 2
-        self.success_per_section = {"section1": 0, "section2": 0, "section3": 0, "section4": 0}
+        self.school_name = school_name
+        self.class_number = class_number
         self.admin = admin
+
+        # Sınav bilgisi role göre tanımlanır
+        if self.role == "student":
+            self.exam_attempts = 0  # Öğrenci için sınav sayısı sıfır
+        else:
+            self.exam_attempts = None  # Öğretmen için sınav bilgisi yok
+
+        # Başarı oranı tüm kullanıcılar için tanımlı
+        self.success_per_section = {
+            "English": 0.0,
+            "Computer": 0.0,
+            "History": 0.0,
+            "Geography": 0.0
+        }if self.role == "student" else None
+
+        # Öğrenci için sınav sonuçları, öğretmen için yok
+        self.exam_results = [] if self.role == "student" else None
+
+        # Öğretmen için ek istatistik bilgisi
+        self.exam_statistics = {
+            "most_incorrect_question": {
+                "question_id": None,
+                "incorrect_count": 0
+            },
+            "most_correct_question": {
+                "question_id": None,
+                "correct_count": 0
+            }
+        } if self.role == "teacher" else None
+
 
     def load_user_data(self):
         try:

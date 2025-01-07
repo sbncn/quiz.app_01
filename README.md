@@ -22,3 +22,12 @@ cd exam-application
 pip install -r requirements.txt
 
 python main.py
+
+run Docker
+docker-compose run --rm exam_app
+
+run test
+python test/main_test.py
+
+create network
+docker-compose up --build
