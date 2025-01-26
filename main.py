@@ -1,35 +1,46 @@
-import tools.main_defs as md
-from tools.setup import setup, get_db_connection, db_config
-import json
-import psycopg2
-import time
-import os
-from psycopg2.extras import execute_batch  # Performans için
-from dotenv import load_dotenv
+# main.py
+import uvicorn
+from fastapi import FastAPI
+from starlette.middleware.sessions import SessionMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 
-def start_menu():
-    while True:
-        print("\n--- Welcome to the Exam System ---")
-        print("1. Setup Database")
-        print("2. Login")
-        print("3. Sign Up")
-        print("4. Exit")
+from tools.database import init_db
+from routers import auth, users, exams, questions, stats, results
 
-        choice = input("Choose an option (1-4): ").strip()
+#####################################################################
+# == EKLENDİ: UI router import
+from routers.ui import ui_router
+#####################################################################
 
-        if choice == "1":
-            setup()  # Veritabanını kurma işlemi
-        elif choice == "2":
-            md.login(db_config)
-        elif choice == "3":
-            md.signup(db_config)
-        elif choice == "4":
-            print("Exiting...")
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+app = FastAPI(title="Examination System API (Pydantic Updated)")
 
+# Session Middleware (JWT token’ı session’da tutacağız)
+# SECRET_KEY’inizi .env’den de okuyabilirsiniz.
+app.add_middleware(SessionMiddleware, secret_key="SESSION_SECRET_KEY", max_age=3600)
+
+# Statik dosyalar (CSS, JS, vs.) için mount
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Jinja2 templates (HTML) klasör yolunu tanımla
+templates = Jinja2Templates(directory="templates")
+
+@app.on_event("startup")
+def on_startup():
+    init_db()
+
+# Mevcut Router’lar (API’ler)
+app.include_router(auth.router, prefix="/auth", tags=["Auth"])
+app.include_router(users.router, prefix="/users", tags=["Users"])
+app.include_router(exams.router, prefix="/exams", tags=["Exams"])
+app.include_router(questions.router, prefix="/questions", tags=["Questions"])
+app.include_router(stats.router, prefix="/stats", tags=["Statistics"])
+app.include_router(results.router, prefix="/students", tags=["Results"])
+
+#####################################################################
+# == EKLENDİ: UI Router (Jinja2 tabanlı web arayüz)
+app.include_router(ui_router, tags=["UI Pages"])
+#####################################################################
 
 if __name__ == "__main__":
-    start_menu()
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

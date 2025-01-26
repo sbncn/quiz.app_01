@@ -1,0 +1,9 @@
+name: exam_project
+channels:
+  - defaults
+  - conda-forge # Rich kütüphanesi için conda-forge kanalı ekleyin
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - -r requirements.txt # Pip ile requirements.txt dosyasını yükle
