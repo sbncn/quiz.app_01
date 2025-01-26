@@ -1,267 +1,161 @@
-[
-  {
-      "id": 1,
-      "question_text": "The sentence 'The Roman Empire fell in 476 AD' is historically accurate.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 23,
-      "false_count": 86
-  },
-  {
-      "id": 2,
-      "question_text": "World War I ended in 1918.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 23,
-      "false_count": 86
-  },
-  {
-      "id": 3,
-      "question_text": "The American Revolution began in 1776.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 21,
-      "false_count": 86
-  },
-  {
-      "id": 4,
-      "question_text": "The French Revolution started in 1800.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 19,
-      "false_count": 92
-  },
-  {
-      "id": 5,
-      "question_text": "The Battle of Waterloo took place in 1815.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 22,
-      "false_count": 87
-  },
-  {
-      "id": 6,
-      "question_text": "Who was the first emperor of China?",
-      "options": [
-          "Jin Shi",
-          "Qin Shi Huang",
-          "Han Wudi",
-          "Emperor Wu"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 18,
-      "false_count": 92
-  },
-  {
-      "id": 7,
-      "question_text": "Which of the following empires was known for its system of roads and aqueducts?",
-      "options": [
-          "Roman Empire",
-          "Ottoman Empire",
-          "Byzantine Empire",
-          "Mughal Empire"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 25,
-      "false_count": 86
-  },
-  {
-      "id": 8,
-      "question_text": "Which historical figure is known for the unification of Germany in 1871?",
-      "options": [
-          "Napoleon Bonaparte",
-          "Otto von Bismarck",
-          "Adolf Hitler",
-          "Winston Churchill"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 19,
-      "false_count": 86
-  },
-  {
-      "id": 9,
-      "question_text": "In which year did Christopher Columbus first reach the Americas?",
-      "options": [
-          "1492",
-          "1453",
-          "1588",
-          "1610"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 24,
-      "false_count": 86
-  },
-  {
-      "id": 10,
-      "question_text": "The Declaration of Independence was signed in which year?",
-      "options": [
-          "1776",
-          "1789",
-          "1812",
-          "1865"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 23,
-      "false_count": 86
-  },
-  {
-      "id": 11,
-      "question_text": "Which of the following are correct examples of major historical revolutions?",
-      "options": [
-          "French Revolution",
-          "Industrial Revolution",
-          "American Revolution",
-          "Scientific Revolution"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 91
-  },
-  {
-      "id": 12,
-      "question_text": "Which of the following were the primary causes of World War I?",
-      "options": [
-          "Nationalism",
-          "Imperialism",
-          "Assassination of Archduke Ferdinand",
-          "Economic Depression"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 91
-  },
-  {
-      "id": 13,
-      "question_text": "Which of the following were major empires during the Medieval period?",
-      "options": [
-          "Roman Empire",
-          "Byzantine Empire",
-          "Mongol Empire",
-          "Ottoman Empire"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 88
-  },
-  {
-      "id": 14,
-      "question_text": "Which of the following were significant leaders during World War II?",
-      "options": [
-          "Winston Churchill",
-          "Franklin D. Roosevelt",
-          "Adolf Hitler",
-          "Joseph Stalin"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 90
-  },
-  {
-      "id": 15,
-      "question_text": "Which of the following were results of the Industrial Revolution?",
-      "options": [
-          "Urbanization",
-          "Advances in technology",
-          "End of feudalism",
-          "Increased agricultural productivity"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 95
-  },
-  {
-      "id": 16,
-      "question_text": "Arrange the following events in chronological order: 'The signing of the Magna Carta', 'The Battle of Hastings', 'The Fall of Constantinople'.",
-      "options": [
-          "The signing of the Magna Carta",
-          "The Battle of Hastings",
-          "The Fall of Constantinople"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 93
-  },
-  {
-      "id": 17,
-      "question_text": "Arrange the following events in chronological order: 'The signing of the Treaty of Versailles', 'The beginning of World War I', 'The end of World War II'.",
-      "options": [
-          "The beginning of World War I",
-          "The signing of the Treaty of Versailles",
-          "The end of World War II"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 90
-  },
-  {
-      "id": 18,
-      "question_text": "Arrange the following events in chronological order: 'The Fall of the Roman Empire', 'The Rise of the Byzantine Empire', 'The Crusades'.",
-      "options": [
-          "The Fall of the Roman Empire",
-          "The Rise of the Byzantine Empire",
-          "The Crusades"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 95
-  },
-  {
-      "id": 19,
-      "question_text": "Arrange the following events in chronological order: 'The start of the American Civil War', 'The Declaration of Independence', 'The Emancipation Proclamation'.",
-      "options": [
-          "The Declaration of Independence",
-          "The start of the American Civil War",
-          "The Emancipation Proclamation"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 88
-  },
-  {
-      "id": 20,
-      "question_text": "Arrange the following leaders in order of their leadership: 'Napoleon Bonaparte', 'Winston Churchill', 'Adolf Hitler'.",
-      "options": [
-          "Napoleon Bonaparte",
-          "Adolf Hitler",
-          "Winston Churchill"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 89
-  }
-]
+{
+	"questions": [
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002A",
+			"section": 3,
+			"question": "Light exhibits both wave and particle properties.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002B",
+			"section": 3,
+			"question": "Sound can travel through a vacuum.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002C",
+			"section": 3,
+			"question": "Heat is the transfer of energy due to a temperature difference.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002D",
+			"section": 3,
+			"question": "Gravitational force is directly proportional to the distance between two masses.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002E",
+			"section": 3,
+			"question": "Electric current is measured in amperes.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544002F",
+			"section": 3,
+			"question": "The boiling point of water is 50 degrees Celsius.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440030",
+			"section": 3,
+			"question": "Photosynthesis occurs in plants.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440031",
+			"section": 3,
+			"question": "Metals are generally poor conductors of electricity.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440032",
+			"section": 3,
+			"question": "What is the opposite of the word 'Beautiful'?",
+			"options": ["Ugly", "Pretty", "Smart", "Happy"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440033",
+			"section": 3,
+			"question": "Fill in the blank: 'I ___ to school every day.'",
+			"options": ["go", "goes", "went", "gone"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440034",
+			"section": 3,
+			"question": "What is the Turkish translation of the word 'Cat'?",
+			"options": ["Köpek", "Kedi", "Kuş", "Balık"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440035",
+			"section": 3,
+			"question": "Which gas do plants absorb from the atmosphere?",
+			"options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440036",
+			"section": 3,
+			"question": "Who is the author of 'Romeo and Juliet'?",
+			"options": [
+				"William Shakespeare",
+				"Jane Austen",
+				"Charles Dickens",
+				"Mark Twain"
+			],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440037",
+			"section": 3,
+			"question": "Which of the following are pronouns in English?",
+			"options": ["He", "She", "It", "And", "But"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440038",
+			"section": 3,
+			"question": "Which of the following words represent sensory organs?",
+			"options": ["Eye", "Ear", "Hand", "Foot", "Nose"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440039",
+			"section": 3,
+			"question": "Which of the following verbs are irregular verbs?",
+			"options": ["Go", "Eat", "Walk", "Play", "Run"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544003A",
+			"section": 3,
+			"question": "Which elements are essential for life?",
+			"options": ["Carbon", "Helium", "Neon", "Hydrogen"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544003B",
+			"section": 3,
+			"question": "Which of the following are common household pets?",
+			"options": ["Dog", "Cat", "Lion", "Tiger"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544003C",
+			"section": 3,
+			"question": "Arrange the fruits in alphabetical order.",
+			"options": ["Banana", "Apple", "Date", "Cherry"],
+			"points": 5,
+			"type": "ordering"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544003D",
+			"section": 3,
+			"question": "Order the stages of human life from youngest to oldest.",
+			"options": ["Teenager", "Adult", "Child", "Newborn"],
+			"points": 5,
+			"type": "ordering"
+		}
+	]
+}

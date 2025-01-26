@@ -1,267 +1,166 @@
-[
-  {
-      "id": 1,
-      "question_text": "A computer's CPU is also known as its brain.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 21,
-      "false_count": 87
-  },
-  {
-      "id": 2,
-      "question_text": "RAM is a type of permanent storage in a computer.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 19,
-      "false_count": 88
-  },
-  {
-      "id": 3,
-      "question_text": "An operating system is necessary for a computer to function.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 20,
-      "false_count": 87
-  },
-  {
-      "id": 4,
-      "question_text": "A computer virus can physically damage hardware components.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 20,
-      "false_count": 88
-  },
-  {
-      "id": 5,
-      "question_text": "HTML is a programming language.",
-      "options": [
-          "True",
-          "False"
-      ],
-      "type": "True-False",
-      "score": 5,
-      "true_count": 18,
-      "false_count": 91
-  },
-  {
-      "id": 6,
-      "question_text": "Which of the following is an input device?",
-      "options": [
-          "Printer",
-          "Keyboard",
-          "Monitor",
-          "Speakers"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 18,
-      "false_count": 90
-  },
-  {
-      "id": 7,
-      "question_text": "Which of the following file extensions is used for Microsoft Word documents?",
-      "options": [
-          ".docx",
-          ".exe",
-          ".jpg",
-          ".mp4"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 22,
-      "false_count": 86
-  },
-  {
-      "id": 8,
-      "question_text": "What does the acronym 'URL' stand for?",
-      "options": [
-          "Universal Resource Locator",
-          "Uniform Resource Locator",
-          "Universal Reference Link",
-          "Uniform Reference Link"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 18,
-      "false_count": 92
-  },
-  {
-      "id": 9,
-      "question_text": "Which of the following is a type of computer network?",
-      "options": [
-          "LAN",
-          "CPU",
-          "HTTP",
-          "SQL"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 23,
-      "false_count": 86
-  },
-  {
-      "id": 10,
-      "question_text": "Which of the following is a programming language?",
-      "options": [
-          "Python",
-          "Windows",
-          "Google Chrome",
-          "Linux"
-      ],
-      "type": "Multiple-Choice",
-      "score": 10,
-      "true_count": 26,
-      "false_count": 86
-  },
-  {
-      "id": 11,
-      "question_text": "Which of the following are examples of output devices?",
-      "options": [
-          "Monitor",
-          "Speakers",
-          "Mouse",
-          "Printer"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 92
-  },
-  {
-      "id": 12,
-      "question_text": "Which of the following are operating systems?",
-      "options": [
-          "Windows",
-          "macOS",
-          "Linux",
-          "Photoshop"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 89
-  },
-  {
-      "id": 13,
-      "question_text": "Which of the following are storage devices?",
-      "options": [
-          "Hard Drive",
-          "RAM",
-          "USB Drive",
-          "CPU"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 90
-  },
-  {
-      "id": 14,
-      "question_text": "Which of the following are web browsers?",
-      "options": [
-          "Google Chrome",
-          "Mozilla Firefox",
-          "Safari",
-          "Microsoft Word"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 93
-  },
-  {
-      "id": 15,
-      "question_text": "Which of the following are examples of computer peripherals?",
-      "options": [
-          "Mouse",
-          "Keyboard",
-          "Scanner",
-          "Operating System"
-      ],
-      "type": "Multiple-Answer",
-      "score": 15,
-      "true_count": 18,
-      "false_count": 90
-  },
-  {
-      "id": 16,
-      "question_text": "Arrange the following steps in order to shut down a Windows computer: 'Click on Start menu', 'Select Shut Down', 'Wait for the system to power off'.",
-      "options": [
-          "Click on Start menu",
-          "Select Shut Down",
-          "Wait for the system to power off"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 92
-  },
-  {
-      "id": 17,
-      "question_text": "Arrange the following steps to create a new folder: 'Right-click on desktop', 'Select New', 'Click on Folder'.",
-      "options": [
-          "Right-click on desktop",
-          "Select New",
-          "Click on Folder"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 95
-  },
-  {
-      "id": 18,
-      "question_text": "Arrange the following steps to open a web page: 'Open a browser', 'Type the URL', 'Press Enter'.",
-      "options": [
-          "Open a browser",
-          "Type the URL",
-          "Press Enter"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 92
-  },
-  {
-      "id": 19,
-      "question_text": "Arrange the following steps to save a file: 'Click on File', 'Select Save As', 'Choose location and click Save'.",
-      "options": [
-          "Click on File",
-          "Select Save As",
-          "Choose location and click Save"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 91
-  },
-  {
-      "id": 20,
-      "question_text": "Arrange the following steps to install software: 'Download the installer', 'Run the installer', 'Follow the on-screen instructions'.",
-      "options": [
-          "Download the installer",
-          "Run the installer",
-          "Follow the on-screen instructions"
-      ],
-      "type": "Ordering",
-      "score": 20,
-      "true_count": 18,
-      "false_count": 90
-  }
-]
+{
+	"questions": [
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440016",
+			"section": 2,
+			"question": "The capital of Turkey is Istanbul.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440017",
+			"section": 2,
+			"question": "The Great Wall of China is visible from space.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440018",
+			"section": 2,
+			"question": "The largest ocean in the world is the Pacific Ocean.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440019",
+			"section": 2,
+			"question": "The Moon is Earth's satellite.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001A",
+			"section": 2,
+			"question": "Mount Everest is the tallest mountain above sea level.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001B",
+			"section": 2,
+			"question": "The Sahara is the largest desert in the world.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001C",
+			"section": 2,
+			"question": "There are seven continents on Earth.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001D",
+			"section": 2,
+			"question": "Australia is both a country and a continent.",
+			"points": 5,
+			"type": "true_false"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001E",
+			"section": 2,
+			"question": "Which province is Pamukkale, listed in the UNESCO World Heritage Sites, located in?",
+			"options": ["Denizli", "Antalya", "Muğla", "İzmir"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-44665544001F",
+			"section": 2,
+			"question": "Which of the following is an African country?",
+			"options": ["Brazil", "Egypt", "Italy", "Japan"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440020",
+			"section": 2,
+			"question": "Which of the following is a Scandinavian country?",
+			"options": ["Norway", "Spain", "Germany", "Greece"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440021",
+			"section": 2,
+			"question": "Which element has the chemical symbol 'O'?",
+			"options": ["Oxygen", "Gold", "Silver", "Hydrogen"],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440022",
+			"section": 2,
+			"question": "Who wrote 'Hamlet'?",
+			"options": [
+				"Charles Dickens",
+				"William Shakespeare",
+				"Leo Tolstoy",
+				"Mark Twain"
+			],
+			"points": 5,
+			"type": "single_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440023",
+			"section": 2,
+			"question": "Which of the following cities are located on the European continent?",
+			"options": ["Paris", "London", "Tokyo", "Berlin", "Moscow"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440024",
+			"section": 2,
+			"question": "Which of the following are Nobel Prize-winning scientists?",
+			"options": [
+				"Marie Curie",
+				"Albert Einstein",
+				"Isaac Newton",
+				"Thomas Edison"
+			],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440025",
+			"section": 2,
+			"question": "Which of the following languages are official languages of the United Nations?",
+			"options": ["English", "French", "German", "Chinese", "Arabic"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440026",
+			"section": 2,
+			"question": "Which planets are known as terrestrial planets?",
+			"options": ["Mars", "Jupiter", "Saturn", "Venus"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440027",
+			"section": 2,
+			"question": "Which of the following are the largest continents by area?",
+			"options": ["Asia", "Europe", "Africa", "Australia"],
+			"points": 10,
+			"type": "multiple_choice"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440028",
+			"section": 2,
+			"question": "Arrange the countries from east to west.",
+			"options": ["Germany", "Japan", "Turkey", "Brazil"],
+			"points": 5,
+			"type": "ordering"
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440029",
+			"section": 2,
+			"question": "Order the seasons starting from spring.",
+			"options": ["Winter", "Autumn", "Spring", "Summer"],
+			"points": 5,
+			"type": "ordering"
+		}
+	]
+}
