@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Teacher Menu</h2>
+
+<!-- Eğer ?msg=Soru eklendi gibi bir mesaj geldiyse göster -->
+{% if msg %}
+<div style="color: green;">{{ msg }}</div>
+{% endif %}
+
+<ul>
+    <li><a href="/teacher_add_question" class="btn">Soru Ekle</a></li>
+    <li><a href="/teacher_view_stats" class="btn">İstatistik Gör</a></li>
+</ul>
+{% endblock %}

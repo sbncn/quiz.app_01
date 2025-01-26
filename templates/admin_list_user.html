@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Kullanıcı Listesi</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Class</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for u in users %}
+        <tr>
+            <td>{{ u.user_id }}</td>
+            <td>{{ u.username }}</td>
+            <td>{{ u.role }}</td>
+            <td>{{ u.class_name }}</td>
+            <td>
+                <!-- Modern buton link -->
+                <a href="/admin_update_user?username={{ u.username }}" class="btn">Update</a>
+                <a href="/admin_delete_user?username={{ u.username }}" class="btn">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

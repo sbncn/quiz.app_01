@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Register</h2>
+
+{% if error %}
+<div style="color: red;">{{ error }}</div>
+{% endif %}
+
+<form method="post" action="/register">
+    <div class="form-row">
+        <label>Kullanıcı Adı:</label>
+        <input type="text" name="username" required>
+    </div>
+
+    <div class="form-row">
+        <label>Şifre (Min 8, 1 Büyük, 1 Küçük, 1 Rakam):</label>
+        <input type="password" name="password" required>
+    </div>
+
+    <div class="form-row">
+        <label>Ad:</label>
+        <input type="text" name="name" required>
+    </div>
+
+    <div class="form-row">
+        <label>Soyad:</label>
+        <input type="text" name="surname" required>
+    </div>
+
+    <div class="form-row">
+        <label>Sınıf:</label>
+        <select name="class_name" required>
+            <option value="7-a">7-A</option>
+            <option value="7-b">7-B</option>
+            <option value="7-c">7-C</option>
+            <option value="7-d">7-D</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label>Rol:</label>
+        <select name="role" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label>Registered Section:</label>
+        <select name="registered_section">
+            <option value="">Öğretmen değilim</option>
+            <option value="matematik">matematik</option>
+            <option value="ingilizce">ingilizce</option>
+            <option value="fizik">fizik</option>
+            <option value="kimya">kimya</option>
+        </select>
+    </div>
+
+    <button type="submit">Kayıt Ol</button>
+</form>
+{% endblock %}

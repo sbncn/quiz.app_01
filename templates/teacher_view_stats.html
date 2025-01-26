@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Section İstatistikleri</h2>
+{% for s in stats %}
+<div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+    <p>School: {{ s.school_id }}</p>
+    <p>Class: {{ s.class_name }}</p>
+    <p>Section: {{ s.section_number }}</p>
+    <p>Correct Questions: {{ s.correct_questions }}</p>
+    <p>Wrong Questions: {{ s.wrong_questions }}</p>
+    <p>Average Score: {{ s.average_score }}</p>
+    <p>Section Percentage: {{ s.section_percentage }}</p>
+</div>
+{% endfor %}
+{% endblock %}

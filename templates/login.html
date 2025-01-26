@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Login</h2>
+<!-- Hoş geldiniz mesajı -->
+
+
+{% if error %}
+<div style="color: red; margin-bottom: 1rem;">
+    {{ error }}
+</div>
+{% endif %}
+
+<form method="post" action="/login">
+    <div class="form-row">
+        <label>Kullanıcı Adı:</label>
+        <input type="text" name="username" required>
+    </div>
+    <div class="form-row">
+        <label>Şifre:</label>
+        <input type="password" name="password" required>
+    </div>
+
+    <button type="submit">Giriş Yap</button>
+</form>
+{% endblock %}

@@ -1,0 +1,214 @@
+/* static/style.css */
+
+/* Sıfırlama / sayfa tam yükseklik */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #105369;
+    /* Ana renklerden biri */
+    padding: 16px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+}
+
+/*
+Modern buton stili (linkler için).
+HTML'de <a href="..." class="btn">Buton</a> şeklinde kullanabilirsiniz.
+*/
+.btn {
+    background: #f62188;
+    color: #fff !important;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+    /* margin-left: 10px; */
+    margin-bottom: 10px;
+    /* nav'da biraz boşluk */
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #105369;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(16, 83, 105, 0.3);
+}
+
+.btn:active {
+    background-color: #0a3d4d;
+}
+
+/* Ana içerik bölümü, dikey-yatay ortalama için */
+.centered-container {
+    /* Header yüksekliğini düştüğümüzde kalan alan: */
+    min-height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* İçeriği kutu şeklinde gösteren yapı */
+.content-box {
+    width: 450px;
+    min-height: 300px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form satırları (label + input/select) */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    width: 160px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #105369;
+}
+
+.form-row input[type="text"],
+.form-row input[type="password"],
+.form-row input[type="number"],
+.form-row select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+.form-row input[type="text"]:hover,
+.form-row input[type="password"]:hover,
+.form-row input[type="number"]:hover,
+.form-row select:hover {
+    border-color: #105369;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="password"]:focus,
+.form-row input[type="number"]:focus,
+.form-row select:focus {
+    border-color: #f62188;
+    box-shadow: 0 0 5px rgba(246, 33, 136, 0.3);
+}
+
+/* Buton tarzları */
+button {
+    background-color: #f62188;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #105369;
+    box-shadow: 0 0 5px rgba(16, 83, 105, 0.3);
+}
+
+button:active {
+    background-color: #0a3d4d;
+}
+
+/* Tablo stili (admin list user) */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #105369;
+    color: #fff;
+}
+
+/* Soru kutusu */
+.question-box {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Soru metni */
+.question-text {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #105369;
+}
+
+/* Şıklar (radio/checkbox) */
+.option {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.option input[type="radio"],
+.option input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* Timer göstergesi */
+#timer {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul{
+    padding-left:0px !important;
+}
+li{
+    list-style: none;
+}
+
+h2 {
+    color: #105369;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #f62188;
+    /* Alt çizgi vurgusu */
+}

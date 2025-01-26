@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Sonuçlarım</h2>
+{% for exam in results %}
+<div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+    <p><strong>Exam ID:</strong> {{ exam.exam_id }}</p>
+    <p><strong>Start Time:</strong> {{ exam.start_time }}</p>
+    <p><strong>End Time:</strong> {{ exam.end_time }}</p>
+    <p><strong>Average Score (Kullanıcı?):</strong> {{ exam.score_avg }}</p>
+
+    <h4>Cevaplar:</h4>
+    <ul>
+        {% for ans in exam.answers %}
+        <li>
+            <strong>Soru ({{ ans.external_id }}):</strong> {{ ans.question }} <br>
+            Kullanıcı Cevabı: {{ ans.user_answer }} /
+            Doğru mu? {{ ans.is_correct }} /
+            Puan: {{ ans.points_earned }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+{% endblock %}
